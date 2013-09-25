@@ -7,9 +7,8 @@ includes:
 - http server
 - livereload
 - templating (via handlebars, compiled with grunt-assemble)
-- 
 
-#install
+install
 
 npm install
 bower install
