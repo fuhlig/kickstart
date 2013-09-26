@@ -51,20 +51,23 @@ module.exports = function(grunt) {
     // sass: {
     //   dist: {
     //     options: {
-    //       sourcemap: true,
-    //       style: 'compressed'
+    //       // sourcemap: true,
+    //       style: 'expanded'
     //     },
 
-    //     files: [
-    //       {
-    //         expand: true,
-    //         cwd: 'scss',
-    //         dest: 'css',
-    //         ext: '.css',
-    //         src: ['**/*.scss', '!**/_*.scss']
-    //       }
-    //     ]
-    //   }
+    //     files: {
+    //       'main.css': 'main.scss'
+    //     }
+        // files: [
+        //   {
+        //     expand: true,
+        //     cwd: 'scss',
+        //     dest: 'css',
+        //     ext: '.css',
+        //     src: ['**/*.scss', '!**/_*.scss']
+        //   }
+        // ]
+      // }
     // },
 
     // compass: {
@@ -171,26 +174,63 @@ module.exports = function(grunt) {
           { expand: true, cwd: './bower_components/modernizr', src: ['modernizr.js'], dest: 'js/vendor' }
         ]
       }
+    },
+
+    notify: {
+      watch: {
+        options: {
+          title: 'watch complete!',
+          message: 'I keep watching you ;-)'
+        }
+      },
+      server: {
+        options: {
+          message: 'server is ready!'
+        }
+      }
+    },
+
+    notify_hooks: {
+      options: {
+        enabled: true
+      }
     }
 
   });
 
   // Default task
   grunt.registerTask('default', [
-    // 'compass',
-    'assemble', 'copy']);
+    'assemble',
+    'copy'
+    ]);
 
   grunt.registerTask('scss', [
-    // 'compass',
-    'copy:css']);
-  grunt.registerTask('html', ['assemble']);
-  grunt.registerTask('js', ['copy:js']);
+    // 'sass',
+    'copy:css'
+    ]);
+  grunt.registerTask('html', [
+    'assemble'
+    ]);
+  grunt.registerTask('js', [
+    'copy:js'
+    ]);
 
-  grunt.registerTask('dev', ['connect', 'watch', 'open:dev']);
-  grunt.registerTask('demo', ['copy:demo', 'assemble:demo', 'open']);
+  grunt.registerTask('dev', [
+    'connect',
+    'watch',
+    'open:dev',
+    'notify'
+    ]);
+  grunt.registerTask('demo', [
+    'copy:demo',
+    'assemble:demo',
+    'open'
+    ]);
   grunt.registerTask('deploy', ['gh-pages']);
 
-  grunt.registerTask('screenshots', ['autoshot:default_options']);
+  grunt.registerTask('screenshots', [
+    'autoshot:default_options'
+    ]);
 
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-notify');
