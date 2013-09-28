@@ -127,8 +127,8 @@ module.exports = function(grunt) {
     },
 
     open: {
-      dev: {
-        path: 'http://localhost:8000'
+      server: {
+        path: 'http://localhost:<%= connect.server.options.port %>'
       }
     },
 
@@ -179,7 +179,6 @@ module.exports = function(grunt) {
     notify: {
       watch: {
         options: {
-          title: 'watch complete!',
           message: 'I keep watching you ;-)'
         }
       },
@@ -187,12 +186,19 @@ module.exports = function(grunt) {
         options: {
           message: 'server is ready!'
         }
+      },
+      deploy: {
+        options: {
+          title: 'deployment',
+          message: 'project deployed to gh-pages!'
+        }
       }
     },
 
     notify_hooks: {
       options: {
-        enabled: true
+        enabled: true,
+        title: 'kickSTART'
       }
     },
 
@@ -224,16 +230,20 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dev', [
     'connect',
-    'watch',
-    'open:dev',
-    'notify'
+    'open:server',
+    'notify:server',
+    'notify:watch',
+    'watch'
     ]);
   grunt.registerTask('demo', [
     'copy:demo',
     'assemble:demo',
     'open'
     ]);
-  grunt.registerTask('deploy', ['gh-pages']);
+  grunt.registerTask('deploy', [
+    'gh-pages',
+    'notify:deploy'
+    ]);
 
   grunt.registerTask('screenshots', [
     'autoshot:default_options'
