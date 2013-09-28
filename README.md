@@ -1,23 +1,44 @@
-kickstart
-=========
+# KICKstart
 
-web boilerplate for frontend workflow.
-based on node, grunt and bower.
+Web boilerplate for frontend workflow based on **node**, **grunt** and **bower**.  
+
 includes:
-- http server
-- livereload
-- templating (via handlebars, compiled with grunt-assemble)
 
-- grunt-notify (https://github.com/dylang/grunt-notify)
-install
+- local development
+    - local http server
+- deployment
+    - via gh-pages
+- live preview
+    - livereload
+- modularity
+    - html templating via handlebars
+    - SASS partials
+- notifications
 
-npm install
-bower install
 
-sass compiling:
-sass --watch --sourcemap scss:css
+## Installation
 
-grunt:
-run initial "grunt" and "grunt dev" for run the http server
+- install [node.js](http://nodejs.org/)
 
-(or execute watch.sh and serve.sh after initial "grunt")
+*use `npm <package> -g` to install packages globally*  
+
+- install grunt via `npm install grunt-cli`
+- install bower via `npm install bower`
+
+- install project depencendies via `npm install` and `bower install`
+
+
+frontend dependencies / extras:  
+
+- [jQuery](http://jquery.com/)
+- [modernizr](http://modernizr.com/)
+- [inuit.css](http://inuitcss.com/)
+
+- sass compiling
+    - sourcemap (requires sass 3.3 via `gem install sass --pre`)  
+    `sass --watch --sourcemap scss:css`
+
+## Usage
+run `grunt` for inital setup and `grunt dev` for run the http server and you're ready to go!
+
+*(or execute `watch.sh` and `serve.sh` after initial `grunt`)*
