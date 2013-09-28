@@ -1,6 +1,6 @@
 {
-  "name": "riseplate",
-  "version": "0.0.0",
+  "name": "kickstart",
+  "version": "0.0.1",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -11,6 +11,8 @@
   "dependencies": {
     "jquery": "git://github.com/components/jquery.git#~2.0.3",
     "modernizr": "git://github.com/Modernizr/Modernizr.git#~2.6.2",
-    "inuit.css": "~5.0.0"
+    "inuit.css": "~5.0.0",
+    "sass-bootstrap": "~3.0.0",
+    "foundation": "~4.3.2"
   }
 }

@@ -1,8 +1,13 @@
-// config file (variables and framework overwrites)
-@import "config";
+// FRAMEWORKS
+// inuit
+@import "inuit/inuit";
 
-// framework
-@import "../bower_components/inuit.css/inuit";
+// foundation
+// @import "../bower_components/foundation/scss/foundation";
 
-// app
-@import "app/app";
+// bootstrap
+// @import "../bower_components/sass-bootstrap/lib/bootstrap";
+
+
+// app specific stylesheets
+@import "app/app-config";

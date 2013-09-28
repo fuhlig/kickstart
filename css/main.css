@@ -847,7 +847,8 @@ textarea:focus {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-.cf:after {
+.cf:after, .nav:after, .media:after, .island:after,
+.islet:after, .matrix:after, .multi-list:after, .stat-group:after {
   content: "";
   display: table;
   clear: both; }
@@ -1604,6 +1605,1333 @@ label,
 /**
  * Objects and abstractions
  */
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+/**
+ * Fluid and nestable grid system, e.g.:
+ *
+   <div class="grid">
+
+       <div class="grid__item  one-third">
+           <p>One third grid</p>
+       </div><!--
+
+    --><div class="grid__item  two-thirds">
+           <p>Two thirds grid</p>
+       </div><!--
+
+    --><div class="grid__item  one-half">
+           <p>One half grid</p>
+       </div><!--
+
+    --><div class="grid__item  one-quarter">
+           <p>One quarter grid</p>
+       </div><!--
+
+    --><div class="grid__item  one-quarter">
+           <p>One quarter grid</p>
+       </div>
+
+   </div>
+ *
+ * Demo: jsfiddle.net/inuitcss/CLYUC
+ *
+ */
+/**
+ * Grid wrapper
+ */
+.grid {
+  margin-left: -24px;
+  list-style: none;
+  margin-bottom: 0; }
+
+/**
+ * Very infrequently occuring grid wrappers as children of grid wrappers.
+ */
+.grid > .grid {
+  margin-left: 0; }
+
+/**
+ * Grid
+ */
+.grid__item {
+  display: inline-block;
+  width: 100%;
+  padding-left: 24px;
+  vertical-align: top; }
+
+/*------------------------------------*\
+    $FLEXBOX
+\*------------------------------------*/
+/**
+ * Until we can utilise flexbox natively we can kinda, sorta, attempt to emulate
+ * it, in a way... e.g.:
+ *
+   <header class=flexbox>
+
+       <div class=flexbox__item>
+           <b>Welcome to</b>
+       </div>
+
+       <div class=flexbox__item>
+           <img src="//csswizardry.com/inuitcss/img/logo.jpg" alt="inuit.css">
+       </div>
+
+   </header>
+ *
+ * We can also combine our grid system classes with `.flexbox__item` classes,
+ * e.g.:
+ *
+   <div class=flexbox>
+       <div class="flexbox__item  one-quarter">
+       </div>
+       <div class="flexbox__item  three-quarters">
+       </div>
+   </div>
+ *
+ * It’s pretty poorly named I’m afraid, but it works...
+ *
+ * Demo: jsfiddle.net/inuitcss/ufUh2
+ *
+ */
+.flexbox {
+  display: table;
+  width: 100%; }
+
+/**
+ * Nasty hack to circumvent Modernizr conflicts.
+ */
+html.flexbox {
+  display: block;
+  width: auto; }
+
+.flexbox__item {
+  display: table-cell;
+  vertical-align: middle; }
+
+/*------------------------------------*\
+    $COLUMNS
+\*------------------------------------*/
+/**
+ * Here we can set elements in columns of text using CSS3, e.g.:
+ *
+   <p class=text-cols--2>
+ *
+ * Demo: jsfiddle.net/inuitcss/E26Yd
+ *
+ */
+.text-cols--2, .text-cols--3, .text-cols--4, .text-cols--5 {
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  -ms-column-gap: 24px;
+  -o-column-gap: 24px;
+  column-gap: 24px; }
+
+.text-cols--2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2; }
+
+.text-cols--3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3; }
+
+.text-cols--4 {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  -ms-column-count: 4;
+  -o-column-count: 4;
+  column-count: 4; }
+
+.text-cols--5 {
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  -ms-column-count: 5;
+  -o-column-count: 5;
+  column-count: 5; }
+
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+/**
+ * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ *
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Vnph4
+ *
+ */
+.nav {
+  list-style: none;
+  margin-left: 0; }
+  .nav > li,
+  .nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ *
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.nav--stacked > li {
+  display: list-item; }
+  .nav--stacked > li > a {
+    display: block; }
+
+/**
+ * `.nav--banner` extends `.nav` and centres the list, e.g.:
+ *
+   <ul class="nav  nav--banner">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.nav--banner {
+  text-align: center; }
+
+/**
+ * Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
+ *
+   <ul class="nav  nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.nav--block, .options {
+  line-height: 1;
+  /**
+   * Remove whitespace caused by `inline-block`.
+   */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  white-space: nowrap; }
+  .nav--block > li, .options > li {
+    letter-spacing: normal;
+    word-spacing: normal; }
+    .nav--block > li > a, .options > li > a {
+      padding: 12px; }
+
+/**
+ * Force a nav to occupy 100% of the available width of its parent. Extends
+ * `.nav`, e.g.:
+ *
+   <ul class="nav  nav--fit">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Thanks to @pimpl for this idea!
+ */
+.nav--fit {
+  display: table;
+  width: 100%; }
+  .nav--fit > li {
+    display: table-cell; }
+    .nav--fit > li > a {
+      display: block; }
+
+/**
+ * Make a list of keywords. Extends `.nav`, e.g.:
+ *
+   `<ul class="nav  nav--keywords>`
+ *
+ */
+.nav--keywords > li:after {
+  content: ", "; }
+.nav--keywords > li:last-child:after {
+  display: none; }
+
+/*------------------------------------*\
+    $OPTIONS
+\*------------------------------------*/
+/**
+ * Link-group nav, used for displaying related options. Extends `.nav--block`
+ * but could also extend `.nav--fit`. Extend with colours and ‘current states’
+ * in your theme stylesheet.
+ *
+  <ul class="nav  options">
+      <li><a></a></li>
+      <li><a></a></li>
+      <li><a></a></li>
+      <li><a></a></li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/vwfaf
+ *
+ */
+.options > li > a {
+  border: 0 solid #cccccc;
+  border-width: 1px;
+  border-left-width: 0; }
+.options > li:first-child > a {
+  border-left-width: 1px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+.options > li:last-child > a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+/*------------------------------------*\
+    $PAGINATION
+\*------------------------------------*/
+/**
+ * Basic pagination object, extends `.nav`.
+ * Requires some funky commenting to collapse any white-space caused by the
+ * `display:inline-block;` rules.
+ *
+   <ol class="nav  pagination">
+       <li class=pagination__first>First</li>
+       <li class=pagination__prev>Previous</li>
+       <li><a href=/page/1>1</a></li>
+       <li><a href=/page/2>2</a></li>
+       <li class=current><a href=/page/3>3</a></li>
+       <li><a href=/page/4>4</a></li>
+       <li><a href=/page/5>5</a></li>
+       <li class=pagination__next><a href=/page/next>Next</a></li>
+       <li class=pagination__last><a href=/page/last>Last</a></li>
+   </ol>
+ *
+ * Demo: jsfiddle.net/inuitcss/9Y6PU
+ *
+ */
+.pagination {
+  text-align: center;
+  /**
+   * Remove whitespace caused by `inline-block`.
+   */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em; }
+
+.pagination > li {
+  padding: 12px;
+  letter-spacing: normal;
+  word-spacing: normal; }
+
+.pagination > li > a {
+  padding: 12px;
+  margin: -12px; }
+
+.pagination__first a:before {
+  content: "« "; }
+
+.pagination__last a:after {
+  content: " »"; }
+
+/*------------------------------------*\
+    $BREADCRUMB
+\*------------------------------------*/
+/**
+ * Simple breadcrumb styling to apply to (ordered) lists. Extends `.nav`, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>The Board</a></li>
+       <li class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ * Demo: jsfiddle.net/inuitcss/rkAY9
+ *
+ */
+.breadcrumb > li + li:before {
+  content: "» "; }
+
+/**
+ * For denoting a path-like structure, GitHub style, e.g.:
+ *
+   <ol class="nav  breadcrumb--path">
+       <li class=breadcrumb__root><a href=#>inuit.css</a></li>
+       <li><a href=#>inuit.css</a></li>
+       <li><a href=#>partials</a></li>
+       <li class=current><a href=#>objects</a></li>
+   </ol>
+ *
+ */
+.breadcrumb--path > li + li:before {
+  content: "/ "; }
+
+/**
+ * Assign a delimiter on the fly through a data attribute, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li data-breadcrumb="|"><a href=#>About</a></li>
+       <li data-breadcrumb="|"><a href=#>The Board</a></li>
+       <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ */
+.breadcrumb > li + li[data-breadcrumb]:before {
+  content: attr(data-breadcrumb) " "; }
+
+/**
+ * Denote the root of the tree.
+ */
+.breadcrumb__root {
+  font-weight: bold; }
+
+/*------------------------------------*\
+    $MEDIA
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ * E.g.:
+ *
+   <div class=media>
+       <img src=http://placekitten.com/200/300 alt="" class=media__img>
+       <p class=media__body>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </div>
+ *
+ * Demo: jsfiddle.net/inuitcss/cf4Qs
+ *
+ */
+.media {
+  display: block; }
+
+.media__img {
+  float: left;
+  margin-right: 24px; }
+
+/**
+ * Reversed image location (right instead of left).
+ */
+.media__img--rev {
+  float: right;
+  margin-left: 24px; }
+
+.media__img img,
+.media__img--rev img {
+  display: block; }
+
+.media__body {
+  overflow: hidden; }
+
+.media__body,
+.media__body > :last-child {
+  margin-bottom: 0; }
+
+/**
+ * `.img`s in `.islet`s need an appropriately sized margin.
+ */
+.islet .media__img {
+  margin-right: 12px; }
+
+.islet .media__img--rev {
+  margin-left: 12px; }
+
+/*------------------------------------*\
+    $MARGINALIA
+\*------------------------------------*/
+/**
+ * Marginalia are, per definition, notes in the margin of a document. The
+ * `marginalia__body` class can be applied to all kinds of content, like text or
+ * images, and is joined by a width class:
+ *
+   <div class="marginalia">
+       <div class="marginalia__body  desk-one-fifth"></div>
+   </div>
+ *
+ * Demo: jsfiddle.net/inuitcss/AemkH
+ *
+ */
+.marginalia {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2; }
+
+/**
+ * Wait for a certain breakpoint to trigger ‘proper' marginalia. Up to this point,
+ * marginalia are inline with the other text.
+ */
+@media (min-width: 1024px) {
+  .marginalia {
+    position: relative; }
+
+  .marginalia__body,
+  .marginalia__body--right {
+    position: absolute; }
+
+  .marginalia__body {
+    right: 100%;
+    padding-right: 24px;
+    text-align: right; }
+
+  /**
+   * Align marginalia to the right of the text.
+   */
+  .marginalia__body--right {
+    left: 100%;
+    padding-left: 24px;
+    text-align: left; } }
+/*------------------------------------*\
+    $ISLAND
+\*------------------------------------*/
+/**
+ * Simple, boxed off content, as per: csswizardry.com/2011/10/the-island-object
+ * E.g.:
+ *
+   <div class=island>
+       I am boxed off.
+   </div>
+ *
+ * Demo: jsfiddle.net/inuitcss/u8pV3
+ *
+ */
+.island,
+.islet {
+  display: block; }
+
+.island {
+  padding: 24px; }
+
+.island > :last-child,
+.islet > :last-child {
+  margin-bottom: 0; }
+
+/**
+ * Just like `.island`, only smaller.
+ */
+.islet {
+  padding: 12px; }
+
+/*------------------------------------*\
+    $BLOCK-LIST
+\*------------------------------------*/
+/**
+ * Create big blocky lists of content, e.g.:
+ *
+   <ul class=block-list>
+      <li>Foo</li>
+      <li>Bar</li>
+      <li>Baz</li>
+      <li><a href=# class=block-list__link>Foo Bar Baz</a></li>
+   </ul>
+ *
+ * Extend this object in your theme stylesheet.
+ *
+ * Demo: jsfiddle.net/inuitcss/hR57q
+ *
+ */
+.block-list, .matrix,
+.block-list > li,
+.matrix > li {
+  border: 0 solid #cccccc; }
+
+.block-list, .matrix {
+  list-style: none;
+  margin-left: 0;
+  border-top-width: 1px; }
+  .block-list > li, .matrix > li {
+    border-bottom-width: 1px;
+    padding: 12px; }
+
+.block-list__link, .matrix__link {
+  display: block;
+  padding: 12px;
+  margin: -12px; }
+
+/*------------------------------------*\
+    $MATRIX
+\*------------------------------------*/
+/**
+ * Create a grid of items out of a single list, e.g.:
+ *
+   <ul class="matrix  three-cols">
+       <li class=all-cols>Lorem</li>
+       <li>Ipsum <a href=#>dolor</a></li>
+       <li><a href=# class=matrix__link>Sit</a></li>
+       <li>Amet</li>
+       <li class=all-cols>Consectetuer</li>
+   </ul>
+ *
+ * Extend this object in your theme stylesheet.
+ *
+ * Demo: jsfiddle.net/inuitcss/Y2zrU
+ *
+ */
+.matrix {
+  border-left-width: 1px; }
+  .matrix > li {
+    float: left;
+    border-right-width: 1px; }
+
+/**
+ * The `.multi-list` object is a lot like the `.matrix` object only without the
+ * blocky borders and padding.
+ *
+   <ul class="multi-list  four-cols">
+       <li>Lorem</li>
+       <li>Ipsum</li>
+       <li>Dolor</li>
+       <li>Sit</li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Y2zrU
+ *
+ */
+.multi-list {
+  list-style: none;
+  margin-left: 0; }
+
+.multi-list > li {
+  float: left; }
+
+/**
+ * Apply these classes alongside the `.matrix` or `.multi-list` classes on
+ * lists to determine how wide their columns are.
+ */
+.two-cols > li {
+  width: 50%; }
+
+.three-cols > li {
+  width: 33.333%; }
+
+.four-cols > li {
+  width: 25%; }
+
+.five-cols > li {
+  width: 20%; }
+
+/**
+ * Unfortunately we have to qualify this selector in order to bring its
+ * specificity above the `.[number]-cols > li` selectors above.
+ */
+.matrix > .all-cols,
+.multi-list > .all-cols {
+  width: 100%; }
+
+/*------------------------------------*\
+    $SPLIT
+\*------------------------------------*/
+/**
+ * Simple split item for creating two elements floated away from one another,
+ * e.g.:
+ *
+   <dl class=split>
+       <dt class=split__title>Burger and fries</dt>
+       <dd>&pound;5.99</dd>
+       <dt class=split__title>Fillet steak</dt>
+       <dd>&pound;19.99</dd>
+       <dt class=split__title>Ice cream</dt>
+       <dd>&pound;2.99</dd>
+   </dl>
+ *
+   <ol class="split  results">
+       <li class=first><b class=split__title>1st place</b> Bob</li>
+       <li class=second><b class=split__title>2nd place</b> Lilly</li>
+       <li class=third><b class=split__title>3rd place</b> Ted</li>
+   </ol>​
+ *
+ * Demo: jsfiddle.net/inuitcss/9gZW7
+ *
+ */
+.split {
+  text-align: right;
+  list-style: none;
+  margin-left: 0; }
+
+.split__title {
+  text-align: left;
+  float: left;
+  clear: left; }
+
+/*------------------------------------*\
+    $THIS-OR-THIS
+\*------------------------------------*/
+/**
+ * Simple options object to provide multiple choices, e.g.:
+ *
+   <h1 class=this-or-this>
+       <a href=# class="this-or-this__this  two-fifths">
+           Free
+       </a>
+       <span class="this-or-this__or  one-fifth">
+           or
+       </span>
+       <a href=# class="this-or-this__this  two-fifths">
+           Pro
+       </a>
+   </h1>
+ *
+ * The `.this-or-this__this` and `.this-or-this__or` objects can be sized using
+ * the grid-system classes.
+ *
+ * Demo: jsfiddle.net/inuitcss/R3sks
+ *
+ */
+.this-or-this {
+  display: table;
+  width: 100%;
+  text-align: center; }
+
+.this-or-this__this,
+.this-or-this__or {
+  display: table-cell;
+  vertical-align: middle; }
+
+/*------------------------------------*\
+    $LINK-COMPLEX
+\*------------------------------------*/
+/**
+ * As inspired by @necolas:
+ * github.com/necolas/suit-utils/blob/master/link.css#L18
+ *
+ * Add hover behaviour to only selected items within links, e.g.:
+ *
+   <a href=log-in class=link-complex>
+       <i class="s  s--user"></i>
+       <span class=link-complex__target>Log in</span>
+   </a>
+ *
+ * Demo: jsfiddle.net/inuitcss/rt9M3
+ *
+ */
+.link-complex,
+.link-complex:hover,
+.link-complex:active,
+.link-complex:focus {
+  text-decoration: none; }
+
+.link-complex:hover .link-complex__target,
+.link-complex:active .link-complex__target,
+.link-complex:focus .link-complex__target {
+  text-decoration: underline; }
+
+/*------------------------------------*\
+    $FLYOUT
+\*------------------------------------*/
+/**
+ * Flyouts are pieces of content that fly out of a parent when said parent is
+ * hovered. They typically appear bottom-left of the parent.
+ *
+   <div class=flyout>
+       Foo
+       <div class=flyout__content>
+           <h1>Lorem</h1>
+           <p>Ipsum</p>
+       </div>
+   </div>
+ *
+ * Extend these objects in your theme stylesheet.
+ *
+ * Demo: jsfiddle.net/inuitcss/B52HG
+ *
+ */
+.flyout,
+.flyout--alt {
+  position: relative;
+  overflow: hidden; }
+
+.flyout__content {
+  /**
+   * Position the flyouts off-screen. This is typically better than
+   * `display:none;`.
+   */
+  position: absolute;
+  top: 100%;
+  left: -99999px; }
+
+/**
+ * Bring the flyouts into view when you hover their parents.
+ * Two different types of flyout; ‘regular’ (`.flyout`) and ‘alternative’
+ * (`.flyout--alt`).
+ */
+.flyout:hover,
+.flyout--alt:hover {
+  overflow: visible; }
+
+/**
+ * Regular flyouts sit all the way from the top, flush left.
+ */
+.flyout:hover > .flyout__content {
+  left: 0; }
+
+/**
+ * Alternative flyouts sit all the way from the left, flush top.
+ */
+.flyout--alt:hover > .flyout__content {
+  top: 0;
+  left: 100%; }
+
+/*------------------------------------*\
+    $ARROWS
+\*------------------------------------*/
+/**
+ * It is a common design treatment to give an element a triangular points-out
+ * arrow, we typically build these with CSS. These following classes allow us to
+ * generate these arbitrarily with a mixin, `@arrow()`.
+ */
+/**
+ * Forms the basis for any/all CSS arrows.
+ */
+/**
+ * Define individual edges so we can combine what we need, when we need.
+ */
+/*------------------------------------*\
+    $SPRITE
+\*------------------------------------*/
+/**
+ * Giving an element a class of `.s` will throw it into ‘sprite’ mode and apply
+ * a background image e.g.:
+ *
+   <a class="sprite  sprite--question-mark">More info&hellip;</a>
+ *
+ * or
+ *
+   <a href=#><i class="sprite  sprite--question-mark"></i> Help and FAQ</a>
+ *
+ * Giving an element a class of `.i` will throw it into ‘icon’ mode and will
+ * not add a background, but should be used for icon fonts and is populated
+ * through a `data-icon` attribute and the `:after` pseudo-element, e.g.:
+ *
+   <a href=#><i class=icon data-icon="&#xF000;"></i> View your favourites</a>
+ *
+ * Where ‘&#xF000;’ might map to a star in your particular icon font.
+ *
+ * These all require extension in your theme stylesheet, e.g. in your own CSS:
+ *
+   .sprite{
+       background-image:url(path/to/your/sprite.png);
+   }
+   .sprite--link{ background-position:0   0  ; }
+   .sprite--star{ background-position:0 -16px; }
+ *
+ * Demo: jsfiddle.net/inuitcss/6TKuS
+ *
+ */
+.sprite,
+.icon {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  /**
+   * So using `.icon` on certain elements doesn’t make a visual difference.
+   */
+  font-style: normal;
+  font-weight: normal;
+  /**
+   * So icons added using `.icon` sit in the centre of the element.
+   */
+  text-align: center; }
+
+.sprite {
+  /**
+   * The typical size of most icons. Override in your theme stylesheet.
+   */
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  /*
+   * H5BP method image replacement:
+   * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
+   */
+  overflow: hidden;
+  *text-indent: -9999px; }
+  .sprite:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
+
+/**
+ * Set up icon font
+ */
+.icon {
+  font-size: 16px;
+  /**
+   * Place the icon in a box the exact same dimensions as the icon itself.
+   */
+  width: 1em;
+  height: 1em; }
+  .icon:before {
+    content: attr(data-icon); }
+
+/**
+ * Icon size modifiers.
+ */
+.i--large {
+  font-size: 32px; }
+
+.i--huge {
+  font-size: 64px; }
+
+.i--natural {
+  font-size: inherit; }
+
+/*------------------------------------*\
+    $ICON-TEXT
+\*------------------------------------*/
+/**
+ * For text-links etc that have an icon with them. Sometimes whitespace would
+ * suffice in creating a gap between the icon and text, for example:
+ *
+   <a href=#>
+       <i class="s  s--help"></i> Help &amp; support
+   </a>
+ *
+ * However we will sometimes want a larger, explicity set gap:
+   <a href=# class=icon-text>
+       <i class="icon-text__icon  s  s--help"></i>Help &amp; support
+   </a>
+ *
+ * Demo: jsfiddle.net/inuitcss/Q6Lbf
+ *
+ */
+.icon-text > .icon-text__icon {
+  margin-right: 6px; }
+
+/**
+ * We can also reverse the direction of the margin for icons that appear to the
+ * right of the text content, thus:
+ *
+   <a href=# class=icon-text--rev>
+       Help &amp; support<i class="icon-text__icon  s  s--help"></i>
+   </a>
+ *
+ */
+.icon-text--rev > .icon-text__icon {
+  margin-left: 6px; }
+
+/*------------------------------------*\
+    $BEAUTONS.CSS
+\*------------------------------------*/
+/**
+ * beautons is a beautifully simple button toolkit.
+ *
+ * LICENSE
+ * 
+ * Copyright 2013 Harry Roberts
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ * http://apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ */
+/*!*
+ * 
+ * @csswizardry -- csswizardry.com/beautons
+ * 
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base button styles.
+ *
+ * 1. Allow us to better style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Stop buttons wrapping and looking broken.
+ * 4. Make buttons inherit font styles.
+ * 5. Force all elements using beautons to appear clickable.
+ * 6. Normalise box model styles.
+ * 7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
+ *    there is 1em of space above and below that text. We therefore apply 1em
+ *    of space to the left and right, as padding, to keep consistent spacing.
+ * 8. Basic cosmetics for default buttons. Change or override at will.
+ * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ */
+.btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  white-space: nowrap;
+  /* [3] */
+  font-family: inherit;
+  /* [4] */
+  font-size: 100%;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  border: none;
+  /* [6] */
+  margin: 0;
+  /* [6] */
+  padding-top: 0;
+  /* [6] */
+  padding-bottom: 0;
+  /* [6] */
+  line-height: 3;
+  /* [7] */
+  padding-right: 1em;
+  /* [7] */
+  padding-left: 1em;
+  /* [7] */
+  border-radius: 4px;
+  /* [8] */ }
+
+.btn, .btn:hover {
+  text-decoration: none;
+  /* [9] */ }
+.btn:active, .btn:focus {
+  outline: none; }
+
+/*------------------------------------*\
+    $SIZES
+\*------------------------------------*/
+/**
+ * Button size modifiers.
+ *
+ * These all follow the same sizing rules as above; text is 1em, space around it
+ * remains uniform.
+ */
+.btn--small {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 2; }
+
+.btn--large {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 4; }
+
+.btn--huge {
+  padding-right: 2em;
+  padding-left: 2em;
+  line-height: 5; }
+
+/**
+ * These buttons will fill the entirety of their container.
+ *
+ * 1. Remove padding so that widths and paddings don’t conflict.
+ */
+.btn--full {
+  width: 100%;
+  padding-right: 0;
+  /* [1] */
+  padding-left: 0;
+  /* [1] */
+  text-align: center; }
+
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Button font-size modifiers.
+ */
+.btn--alpha {
+  font-size: 3rem; }
+
+.btn--beta {
+  font-size: 2rem; }
+
+.btn--gamma {
+  font-size: 1rem; }
+
+/**
+ * Make the button inherit sizing from its parent.
+ */
+.btn--natural {
+  vertical-align: baseline;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: 0.5em;
+  padding-left: 0.5em; }
+
+/*------------------------------------*\
+    $FUNCTIONS
+\*------------------------------------*/
+/**
+ * Button function modifiers.
+ */
+/**
+ * Positive actions; e.g. sign in, purchase, submit, etc.
+ */
+.btn--positive {
+  background-color: #4A993E;
+  color: #fff; }
+
+/**
+ * Negative actions; e.g. close account, delete photo, remove friend, etc.
+ */
+.btn--negative {
+  background-color: #b33630;
+  color: #fff; }
+
+/**
+ * Inactive, disabled buttons.
+ * 
+ * 1. Make the button look like normal text when hovered.
+ */
+.btn--inactive,
+.btn--inactive:hover,
+.btn--inactive:active,
+.btn--inactive:focus {
+  background-color: #ddd;
+  color: #777;
+  cursor: text;
+  /* [1] */ }
+
+/*------------------------------------*\
+    $STYLES
+\*------------------------------------*/
+/**
+ * Button style modifiers.
+ *
+ * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
+ */
+.btn--soft {
+  border-radius: 200px;
+  /* [1] */ }
+
+.btn--hard {
+  border-radius: 0; }
+
+/*------------------------------------*\
+    $LOZENGES
+\*------------------------------------*/
+/**
+ * Create pill- and lozenge-like runs of text, e.g.:
+ *
+   <p>This <span class=pill>here</span> is a pill!</p>
+ *
+   <p>This <span class=loz>here</span> is also a lozenge!</p>
+ *
+ * Pills have fully rounded ends, lozenges have only their corners rounded.
+ *
+ * Demo: jsfiddle.net/inuitcss/N3pGm
+ *
+ */
+.pill, .loz {
+  display: inline-block;
+  /**
+   * These numbers set in ems mean that, at its narrowest, a lozenge will be
+   * the same width as the `line-height` set on the `html` element.
+   * This allows us to use the `.loz` in almost any `font-size` we wish.
+   */
+  min-width: 1.0em;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  /* =1.50em */
+  text-align: center;
+  background-color: #cccccc;
+  color: #fff;
+  /* Override this color in your theme stylesheet */
+  /**
+   * Normally we’d use border-radius:100%; but instead here we just use an
+   * overly large number; `border-radius:100%;` would create an oval on
+   * non-square elements whereas we just want to round the ends of an element.
+   */
+  border-radius: 100px; }
+
+.loz {
+  border-radius: 4px; }
+
+/*------------------------------------*\
+    $RULES
+\*------------------------------------*/
+/**
+ * Horizontal rules, extend `hr`.
+ *
+ * Demo: jsfiddle.net/inuitcss/L6GuZ
+ *
+ */
+.rule {
+  color: #cccccc;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: 23px;
+  margin-bottom: 1.4375rem; }
+
+/**
+ * Dotted rules
+ */
+.rule--dotted {
+  border-bottom-style: dotted; }
+
+/**
+ * Dashed rules
+ */
+.rule--dashed {
+  border-bottom-style: dashed; }
+
+/**
+ * Ornamental rules. Places a § over the rule.
+ */
+.rule--ornament {
+  position: relative;
+  /**
+  * Pass in an arbitrary ornament though a data attribute, e.g.:
+  *
+    <hr class="rule  rule--ornament" data-ornament="!">
+  *
+  */ }
+  .rule--ornament:after {
+    content: "§";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 0;
+    text-align: center; }
+  .rule--ornament[data-ornament]:after {
+    content: attr(data-ornament); }
+
+/*------------------------------------*\
+    $STATS
+\*------------------------------------*/
+ /**
+  * Simple object to display key–value statistic-like information, e.g.:
+  *
+    <div class=stat-group>
+        <dl class=stat>
+            <dt class=stat__title>Tweets</dt>
+            <dd class=stat__value>27,740</dd>
+        </dl>
+
+        <dl class=stat>
+            <dt class=stat__title>Following</dt>
+            <dd class=stat__value>11,529</dd>
+        </dl>
+
+        <dl class=stat>
+            <dt class=stat__title>Followers</dt>
+            <dd class=stat__value>12,105</dd>
+        </dl>
+    </div>
+  *
+  * Demo: jsfiddle.net/inuitcss/Bpwu6
+  *
+  */
+.stat-group {
+  margin-left: -24px; }
+
+.stat {
+  float: left;
+  margin-left: 24px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column; }
+
+.stat__title {
+  -webkit-order: 2;
+  -moz-order: 2;
+  -ms-order: 2;
+  -o-order: 2;
+  order: 2;
+  -ms-flex-order: 2; }
+
+.stat__value {
+  margin-left: 0;
+  -webkit-order: 1;
+  -moz-order: 1;
+  -ms-order: 1;
+  -o-order: 1;
+  order: 1;
+  -ms-flex-order: 1; }
+
+/*------------------------------------*\
+    $GREYBOX
+\*------------------------------------*/
+/**
+ * Quickly throw together greybox wireframes. Use in conjunction with other
+ * inuit.css objects to create simple greybox prototypes, e.g.:
+ *
+   <div class="island  greybox  greybox--medium">Header</div>
+
+   <ul class="nav  nav--fit  nav--block  greybox">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * The beauty of combining the greyboxing with inuit.css objects is that any
+ * prototyping can quickly be converted into/used as production code.
+ *
+ * For a more complete prototyping framework, consider Adam Whitcroft’s Proto:
+ * adamwhitcroft.com/proto
+ *
+ * Demo: jsfiddle.net/inuitcss/qCXfh/
+ *
+ */
+.greybox,
+.graybox {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff; }
+
+.greybox a,
+.graybox a {
+  color: #fff;
+  text-decoration: underline; }
+
+/**
+ * All greyboxes will occupy 100% of their parent’s width, but to alter their
+ * heights we apply incrementally larger line-heights:
+ */
+.greybox--small,
+.graybox--small {
+  line-height: 48px; }
+
+.greybox--medium,
+.graybox--medium {
+  line-height: 96px; }
+
+.greybox--large,
+.graybox--large {
+  line-height: 192px; }
+
+.greybox--huge,
+.graybox--huge {
+  line-height: 384px; }
+
+.greybox--gigantic,
+.graybox--gigantic {
+  line-height: 768px; }
+
 /**
  * Style trumps; helper and brand classes
  */

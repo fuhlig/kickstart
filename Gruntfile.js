@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       livereload: {
         options: {
           livereload: true,
-          debounceDelay: 500
+          debounceDelay: 600
         },
         files: [
           'dist/**/*.html',
