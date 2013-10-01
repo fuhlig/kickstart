@@ -455,7 +455,8 @@ main,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /*
  * Correct `inline-block` display not defined in IE 8/9.
@@ -463,7 +464,8 @@ summary {
 audio,
 canvas,
 video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /*
  * Prevent modern browsers from displaying `audio` without controls.
@@ -471,13 +473,15 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /*
  * Address styling not present in IE 8/9.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 /* ==========================================================================
    Base
@@ -493,13 +497,15 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /*
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Links
@@ -508,14 +514,16 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted; }
+  outline: thin dotted;
+}
 
 /*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* ==========================================================================
    Typography
@@ -526,26 +534,30 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /*
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /*
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /*
  * Address styling not present in Safari 5 and Chrome.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /*
  * Address differences between Firefox and other browsers.
@@ -553,14 +565,16 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /*
  * Address styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /*
  * Correct font family set oddly in Safari 5 and Chrome.
@@ -570,25 +584,29 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /*
  * Improve readability of pre-formatted text in all browsers.
  */
 pre {
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+}
 
 /*
  * Set consistent quote types.
  */
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
 
 /*
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -598,13 +616,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* ==========================================================================
    Embedded content
@@ -613,13 +634,15 @@ sub {
  * Remove border when inside `a` element in IE 8/9.
  */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /*
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Figures
@@ -628,7 +651,8 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari 5.
  */
 figure {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Forms
@@ -639,7 +663,8 @@ figure {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /*
  * 1. Correct `color` not being inherited in IE 8/9.
@@ -649,7 +674,8 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /*
  * 1. Correct font family not being inherited in all browsers.
@@ -665,7 +691,8 @@ textarea {
   font-size: 100%;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /*
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -673,7 +700,8 @@ textarea {
  */
 button,
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /*
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -683,7 +711,8 @@ input {
  */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -699,14 +728,16 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /*
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /*
  * 1. Address box sizing set to `content-box` in IE 8/9.
@@ -717,7 +748,8 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /*
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -730,7 +762,8 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /*
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -738,7 +771,8 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /*
  * Remove inner padding and border in Firefox 4+.
@@ -746,7 +780,8 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * 1. Remove default vertical scrollbar in IE 8/9.
@@ -756,7 +791,8 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* ==========================================================================
    Tables
@@ -766,7 +802,8 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /*------------------------------------*\
     $RESET
@@ -783,7 +820,8 @@ table {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /**
  * The usual...
@@ -795,31 +833,36 @@ form, fieldset, legend,
 table, th, td, caption,
 hr {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
 abbr[title], dfn[title] {
-  cursor: help; }
+  cursor: help;
+}
 
 /**
  * Remove underlines from potentially troublesome elements.
  */
 u, ins {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /**
  * Apply faux underline via `border-bottom`.
  */
 ins {
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+}
 
 /**
  * So that `alt` text is visually offset if images don’t load.
  */
 img {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Give form elements some cursor interactions...
@@ -830,14 +873,16 @@ textarea,
 button,
 select,
 option {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .text-input:active,
 .text-input:focus,
 textarea:active,
 textarea:focus {
   cursor: text;
-  outline: none; }
+  outline: none;
+}
 
 /*------------------------------------*\
     $CLEARFIX
@@ -851,7 +896,8 @@ textarea:focus {
 .islet:after, .matrix:after, .multi-list:after, .stat-group:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 /*------------------------------------*\
     $SHARED
@@ -875,25 +921,28 @@ pre,
 .island,
 .islet {
   margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-  .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
-  ul, .islet ol, .islet dl, .islet
-  blockquote, .islet p, .islet address, .islet
-  table, .islet
-  fieldset, .islet figure, .islet
-  pre, .islet .form-fields > li, .islet
-  .media, .islet
-  .island, .islet
-  .islet {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; }
+  margin-bottom: 1.5rem;
+}
+.islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
+ul, .islet ol, .islet dl, .islet
+blockquote, .islet p, .islet address, .islet
+table, .islet
+fieldset, .islet figure, .islet
+pre, .islet .form-fields > li, .islet
+.media, .islet
+.island, .islet
+.islet {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
 
 /**
  * Doubled up `margin-bottom` helper class.
  */
 .landmark {
   margin-bottom: 48px;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+}
 
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
@@ -901,7 +950,8 @@ pre,
  */
 hr {
   margin-bottom: 22px;
-  margin-bottom: 1.375rem; }
+  margin-bottom: 1.375rem;
+}
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
@@ -909,7 +959,8 @@ hr {
  */
 ul, ol, dd {
   margin-left: 48px;
-  margin-left: 3rem; }
+  margin-left: 3rem;
+}
 
 /**
  * Base styles; unclassed HTML elements etc.
@@ -920,7 +971,8 @@ ul, ol, dd {
 html {
   font: 1em/1.5 sans-serif;
   overflow-y: scroll;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 /*------------------------------------*\
     $HEADINGS
@@ -935,32 +987,38 @@ html {
 h1, .alpha {
   font-size: 36px;
   font-size: 2.25rem;
-  line-height: 1.33333; }
+  line-height: 1.33333;
+}
 
 h2, .beta {
   font-size: 30px;
   font-size: 1.875rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+}
 
 h3, .gamma {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1; }
+  line-height: 1;
+}
 
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+}
 
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 h6, .zeta {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.71429; }
+  line-height: 1.71429;
+}
 
 /**
  * Heading groups and generic any-heading class.
@@ -973,7 +1031,8 @@ h6, .zeta {
  *
  */
 hgroup .hN {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * A series of classes for setting massive type; for use in heroes, mastheads,
@@ -982,17 +1041,20 @@ hgroup .hN {
 .giga {
   font-size: 96px;
   font-size: 6rem;
-  line-height: 1; }
+  line-height: 1;
+}
 
 .mega {
   font-size: 72px;
   font-size: 4.5rem;
-  line-height: 1; }
+  line-height: 1;
+}
 
 .kilo {
   font-size: 48px;
   font-size: 3rem;
-  line-height: 1; }
+  line-height: 1;
+}
 
 /*------------------------------------*\
     $PARAGRAPHS
@@ -1005,7 +1067,8 @@ hgroup .hN {
 .lead {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.33333; }
+  line-height: 1.33333;
+}
 
 /*------------------------------------*\
     $SMALLPRINT
@@ -1017,12 +1080,14 @@ hgroup .hN {
 .milli {
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 2; }
+  line-height: 2;
+}
 
 .micro {
   font-size: 10px;
   font-size: 0.625rem;
-  line-height: 2.4; }
+  line-height: 2.4;
+}
 
 /*------------------------------------*\
     $QUOTES
@@ -1037,37 +1102,48 @@ hgroup .hN {
  * Inline quotes.
  */
 q {
-  quotes: "‘" "’" "“" "”"; }
-  q:before {
-    content: "‘";
-    content: open-quote; }
-  q:after {
-    content: "’";
-    content: close-quote; }
-  q q:before {
-    content: "“";
-    content: open-quote; }
-  q q:after {
-    content: "”";
-    content: close-quote; }
+  quotes: "‘" "’" "“" "”";
+}
+q:before {
+  content: "‘";
+  content: open-quote;
+}
+q:after {
+  content: "’";
+  content: close-quote;
+}
+q q:before {
+  content: "“";
+  content: open-quote;
+}
+q q:after {
+  content: "”";
+  content: close-quote;
+}
 
 blockquote {
-  quotes: "“" "”"; }
-  blockquote p:before {
-    content: "“";
-    content: open-quote; }
-  blockquote p:after {
-    content: "";
-    content: no-close-quote; }
-  blockquote p:last-of-type:after {
-    content: "”";
-    content: close-quote; }
-  blockquote q:before {
-    content: "‘";
-    content: open-quote; }
-  blockquote q:after {
-    content: "’";
-    content: close-quote; }
+  quotes: "“" "”";
+}
+blockquote p:before {
+  content: "“";
+  content: open-quote;
+}
+blockquote p:after {
+  content: "";
+  content: no-close-quote;
+}
+blockquote p:last-of-type:after {
+  content: "”";
+  content: close-quote;
+}
+blockquote q:before {
+  content: "‘";
+  content: open-quote;
+}
+blockquote q:after {
+  content: "’";
+  content: close-quote;
+}
 
 /**
  *
@@ -1082,15 +1158,19 @@ blockquote {
   /**
    * .4em is roughly equal to the width of the opening “ that we wish to hang.
    */
-  text-indent: -0.41em; }
-  blockquote p:last-of-type {
-    margin-bottom: 0; }
+  text-indent: -0.41em;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}
 
 .source {
   display: block;
-  text-indent: 0; }
-  .source:before {
-    content: "—"; }
+  text-indent: 0;
+}
+.source:before {
+  content: "—";
+}
 
 /*------------------------------------*\
     $CODE
@@ -1099,12 +1179,14 @@ blockquote {
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
 pre mark {
   background: none;
   border-bottom: 1px solid;
-  color: inherit; }
+  color: inherit;
+}
 
 /**
  * Add comments to your code examples, e.g.:
@@ -1117,7 +1199,8 @@ pre mark {
    * Override this setting in your theme stylesheet
    */
   opacity: 0.75;
-  filter: alpha(opacity=75); }
+  filter: alpha(opacity=75);
+}
 
 /**
  * You can add line numbers to your code examples but be warned, it requires
@@ -1150,11 +1233,13 @@ pre mark {
   /* [3] */
   overflow: auto;
   /* [3] */
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .line-numbers code {
   white-space: pre;
-  /* [4] */ }
+  /* [4] */
+}
 
 /*------------------------------------*\
     $IMAGES
@@ -1166,20 +1251,23 @@ pre mark {
  * Fluid images.
  */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
 img[width],
 img[height] {
-  max-width: none; }
+  max-width: none;
+}
 
 /**
  * Rounded images.
  */
 .img--round {
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 /**
  * Image placement variations.
@@ -1187,18 +1275,21 @@ img[height] {
 .img--right {
   float: right;
   margin-bottom: 24px;
-  margin-left: 24px; }
+  margin-left: 24px;
+}
 
 .img--left {
   float: left;
   margin-right: 24px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+}
 
 .img--center {
   display: block;
   margin-right: auto;
   margin-bottom: 24px;
-  margin-left: auto; }
+  margin-left: auto;
+}
 
 /**
  * Keep your images on your baseline.
@@ -1207,19 +1298,23 @@ img[height] {
  * distort when resized below a certain width. Use with caution.
  */
 .img--short {
-  height: 120px; }
+  height: 120px;
+}
 
 .img--medium {
-  height: 240px; }
+  height: 240px;
+}
 
 .img--tall {
-  height: 360px; }
+  height: 360px;
+}
 
 /**
  * Images in `figure` elements.
  */
 figure > img {
-  display: block; }
+  display: block;
+}
 
 /*------------------------------------*\
     $LISTS
@@ -1229,14 +1324,16 @@ figure > img {
  */
 li > ul,
 li > ol {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * Have a numbered `ul` without the semantics implied by using an `ol`.
  */
 /*ul*/
 .numbered-list {
-  list-style-type: decimal; }
+  list-style-type: decimal;
+}
 
 /*------------------------------------*\
     $TABLES
@@ -1296,34 +1393,43 @@ li > ol {
  *
  */
 table {
-  width: 100%; }
+  width: 100%;
+}
 
 th,
 td {
   padding: 6px;
-  text-align: left; }
-  @media screen and (min-width: 480px) {
-    th,
-    td {
-      padding: 12px; } }
+  text-align: left;
+}
+@media screen and (min-width: 480px) {
+  th,
+  td {
+    padding: 12px;
+  }
+}
 
 /**
  * Cell alignments
  */
 [colspan] {
-  text-align: center; }
+  text-align: center;
+}
 
 [colspan="1"] {
-  text-align: left; }
+  text-align: left;
+}
 
 [rowspan] {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 [rowspan="1"] {
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .numerical {
-  text-align: right; }
+  text-align: right;
+}
 
 /**
  * In the HTML above we see several `col` elements with classes whose numbers
@@ -1332,115 +1438,146 @@ td {
  * the table.
  */
 .t5 {
-  width: 5%; }
+  width: 5%;
+}
 
 .t10 {
-  width: 10%; }
+  width: 10%;
+}
 
 .t12 {
-  width: 12.5%; }
+  width: 12.5%;
+}
 
 /* 1/8 */
 .t15 {
-  width: 15%; }
+  width: 15%;
+}
 
 .t20 {
-  width: 20%; }
+  width: 20%;
+}
 
 .t25 {
-  width: 25%; }
+  width: 25%;
+}
 
 /* 1/4 */
 .t30 {
-  width: 30%; }
+  width: 30%;
+}
 
 .t33 {
-  width: 33.333%; }
+  width: 33.333%;
+}
 
 /* 1/3 */
 .t35 {
-  width: 35%; }
+  width: 35%;
+}
 
 .t37 {
-  width: 37.5%; }
+  width: 37.5%;
+}
 
 /* 3/8 */
 .t40 {
-  width: 40%; }
+  width: 40%;
+}
 
 .t45 {
-  width: 45%; }
+  width: 45%;
+}
 
 .t50 {
-  width: 50%; }
+  width: 50%;
+}
 
 /* 1/2 */
 .t55 {
-  width: 55%; }
+  width: 55%;
+}
 
 .t60 {
-  width: 60%; }
+  width: 60%;
+}
 
 .t62 {
-  width: 62.5%; }
+  width: 62.5%;
+}
 
 /* 5/8 */
 .t65 {
-  width: 65%; }
+  width: 65%;
+}
 
 .t66 {
-  width: 66.666%; }
+  width: 66.666%;
+}
 
 /* 2/3 */
 .t70 {
-  width: 70%; }
+  width: 70%;
+}
 
 .t75 {
-  width: 75%; }
+  width: 75%;
+}
 
 /* 3/4*/
 .t80 {
-  width: 80%; }
+  width: 80%;
+}
 
 .t85 {
-  width: 85%; }
+  width: 85%;
+}
 
 .t87 {
-  width: 87.5%; }
+  width: 87.5%;
+}
 
 /* 7/8 */
 .t90 {
-  width: 90%; }
+  width: 90%;
+}
 
 .t95 {
-  width: 95%; }
+  width: 95%;
+}
 
 /**
  * Bordered tables
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc; }
-  .table--bordered th:empty,
-  .table--bordered td:empty {
-    border: none; }
+  border: 1px solid #cccccc;
+}
+.table--bordered th:empty,
+.table--bordered td:empty {
+  border: none;
+}
 .table--bordered thead tr:last-child th {
-  border-bottom-width: 2px; }
+  border-bottom-width: 2px;
+}
 .table--bordered tbody tr th:last-of-type {
-  border-right-width: 2px; }
+  border-right-width: 2px;
+}
 
 /**
  * Striped tables
  */
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #ffc;
-  /* Override this color in your theme stylesheet */ }
+  /* Override this color in your theme stylesheet */
+}
 
 /**
  * Data table
  */
 .table--data {
-  font: 12px/1.5 sans-serif; }
+  font: 12px/1.5 sans-serif;
+}
 
 /*------------------------------------*\
     $FORMS
@@ -1451,7 +1588,8 @@ td {
  *
  */
 fieldset {
-  padding: 24px; }
+  padding: 24px;
+}
 
 /**
  * Text inputs
@@ -1467,7 +1605,8 @@ fieldset {
 textarea {
   /**
    * Style these via your theme stylesheet.
-   */ }
+   */
+}
 
 /**
  * Group sets of form fields in a list, e.g.:
@@ -1490,10 +1629,12 @@ textarea {
  */
 .form-fields {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+}
 
 .form-fields > li:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * Labels
@@ -1523,7 +1664,8 @@ textarea {
  */
 label,
 .label {
-  display: block; }
+  display: block;
+}
 
 /**
  * Extra help text in `label`s, e.g.:
@@ -1533,7 +1675,8 @@ label,
  */
 .additional {
   display: block;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 /*
  * Groups of checkboxes and radios, e.g.:
@@ -1552,7 +1695,8 @@ label,
  */
 .check-list {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+}
 
 /*
  * Labels in check-lists
@@ -1560,7 +1704,8 @@ label,
 .check-label,
 .check-list label,
 .check-list .label {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Spoken forms are for forms that read like spoken word, e.g.:
@@ -1579,7 +1724,8 @@ label,
  */
 .spoken-form label {
   display: inline-block;
-  font: inherit; }
+  font: inherit;
+}
 
 /**
  * Extra help text displayed after a field when that field is in focus, e.g.:
@@ -1596,11 +1742,13 @@ label,
 /*small*/
 .extra-help {
   display: inline-block;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .text-input:active + .extra-help,
 .text-input:focus + .extra-help {
-  visibility: visible; }
+  visibility: visible;
+}
 
 /**
  * Objects and abstractions
@@ -1644,13 +1792,15 @@ label,
 .grid {
   margin-left: -24px;
   list-style: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
 .grid > .grid {
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 /**
  * Grid
@@ -1659,7 +1809,8 @@ label,
   display: inline-block;
   width: 100%;
   padding-left: 24px;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 /*------------------------------------*\
     $FLEXBOX
@@ -1697,18 +1848,21 @@ label,
  */
 .flexbox {
   display: table;
-  width: 100%; }
+  width: 100%;
+}
 
 /**
  * Nasty hack to circumvent Modernizr conflicts.
  */
 html.flexbox {
   display: block;
-  width: auto; }
+  width: auto;
+}
 
 .flexbox__item {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*------------------------------------*\
     $COLUMNS
@@ -1726,35 +1880,40 @@ html.flexbox {
   -moz-column-gap: 24px;
   -ms-column-gap: 24px;
   -o-column-gap: 24px;
-  column-gap: 24px; }
+  column-gap: 24px;
+}
 
 .text-cols--2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -ms-column-count: 2;
   -o-column-count: 2;
-  column-count: 2; }
+  column-count: 2;
+}
 
 .text-cols--3 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -ms-column-count: 3;
   -o-column-count: 3;
-  column-count: 3; }
+  column-count: 3;
+}
 
 .text-cols--4 {
   -webkit-column-count: 4;
   -moz-column-count: 4;
   -ms-column-count: 4;
   -o-column-count: 4;
-  column-count: 4; }
+  column-count: 4;
+}
 
 .text-cols--5 {
   -webkit-column-count: 5;
   -moz-column-count: 5;
   -ms-column-count: 5;
   -o-column-count: 5;
-  column-count: 5; }
+  column-count: 5;
+}
 
 /*------------------------------------*\
     $NAV
@@ -1776,12 +1935,14 @@ html.flexbox {
  */
 .nav {
   list-style: none;
-  margin-left: 0; }
-  .nav > li,
-  .nav > li > a {
-    display: inline-block;
-    *display: inline;
-    zoom: 1; }
+  margin-left: 0;
+}
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
 
 /**
  * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
@@ -1795,9 +1956,11 @@ html.flexbox {
  *
  */
 .nav--stacked > li {
-  display: list-item; }
-  .nav--stacked > li > a {
-    display: block; }
+  display: list-item;
+}
+.nav--stacked > li > a {
+  display: block;
+}
 
 /**
  * `.nav--banner` extends `.nav` and centres the list, e.g.:
@@ -1811,7 +1974,8 @@ html.flexbox {
  *
  */
 .nav--banner {
-  text-align: center; }
+  text-align: center;
+}
 
 /**
  * Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
@@ -1831,12 +1995,15 @@ html.flexbox {
    */
   letter-spacing: -0.31em;
   word-spacing: -0.43em;
-  white-space: nowrap; }
-  .nav--block > li, .options > li {
-    letter-spacing: normal;
-    word-spacing: normal; }
-    .nav--block > li > a, .options > li > a {
-      padding: 12px; }
+  white-space: nowrap;
+}
+.nav--block > li, .options > li {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.nav--block > li > a, .options > li > a {
+  padding: 12px;
+}
 
 /**
  * Force a nav to occupy 100% of the available width of its parent. Extends
@@ -1853,11 +2020,14 @@ html.flexbox {
  */
 .nav--fit {
   display: table;
-  width: 100%; }
-  .nav--fit > li {
-    display: table-cell; }
-    .nav--fit > li > a {
-      display: block; }
+  width: 100%;
+}
+.nav--fit > li {
+  display: table-cell;
+}
+.nav--fit > li > a {
+  display: block;
+}
 
 /**
  * Make a list of keywords. Extends `.nav`, e.g.:
@@ -1866,9 +2036,11 @@ html.flexbox {
  *
  */
 .nav--keywords > li:after {
-  content: ", "; }
+  content: ", ";
+}
 .nav--keywords > li:last-child:after {
-  display: none; }
+  display: none;
+}
 
 /*------------------------------------*\
     $OPTIONS
@@ -1891,14 +2063,17 @@ html.flexbox {
 .options > li > a {
   border: 0 solid #cccccc;
   border-width: 1px;
-  border-left-width: 0; }
+  border-left-width: 0;
+}
 .options > li:first-child > a {
   border-left-width: 1px;
   border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
+  border-bottom-left-radius: 4px;
+}
 .options > li:last-child > a {
   border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px; }
+  border-bottom-right-radius: 4px;
+}
 
 /*------------------------------------*\
     $PAGINATION
@@ -1929,22 +2104,27 @@ html.flexbox {
    * Remove whitespace caused by `inline-block`.
    */
   letter-spacing: -0.31em;
-  word-spacing: -0.43em; }
+  word-spacing: -0.43em;
+}
 
 .pagination > li {
   padding: 12px;
   letter-spacing: normal;
-  word-spacing: normal; }
+  word-spacing: normal;
+}
 
 .pagination > li > a {
   padding: 12px;
-  margin: -12px; }
+  margin: -12px;
+}
 
 .pagination__first a:before {
-  content: "« "; }
+  content: "« ";
+}
 
 .pagination__last a:after {
-  content: " »"; }
+  content: " »";
+}
 
 /*------------------------------------*\
     $BREADCRUMB
@@ -1963,7 +2143,8 @@ html.flexbox {
  *
  */
 .breadcrumb > li + li:before {
-  content: "» "; }
+  content: "» ";
+}
 
 /**
  * For denoting a path-like structure, GitHub style, e.g.:
@@ -1977,7 +2158,8 @@ html.flexbox {
  *
  */
 .breadcrumb--path > li + li:before {
-  content: "/ "; }
+  content: "/ ";
+}
 
 /**
  * Assign a delimiter on the fly through a data attribute, e.g.:
@@ -1991,13 +2173,15 @@ html.flexbox {
  *
  */
 .breadcrumb > li + li[data-breadcrumb]:before {
-  content: attr(data-breadcrumb) " "; }
+  content: attr(data-breadcrumb) " ";
+}
 
 /**
  * Denote the root of the tree.
  */
 .breadcrumb__root {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /*------------------------------------*\
     $MEDIA
@@ -2017,38 +2201,46 @@ html.flexbox {
  *
  */
 .media {
-  display: block; }
+  display: block;
+}
 
 .media__img {
   float: left;
-  margin-right: 24px; }
+  margin-right: 24px;
+}
 
 /**
  * Reversed image location (right instead of left).
  */
 .media__img--rev {
   float: right;
-  margin-left: 24px; }
+  margin-left: 24px;
+}
 
 .media__img img,
 .media__img--rev img {
-  display: block; }
+  display: block;
+}
 
 .media__body {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .media__body,
 .media__body > :last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * `.img`s in `.islet`s need an appropriately sized margin.
  */
 .islet .media__img {
-  margin-right: 12px; }
+  margin-right: 12px;
+}
 
 .islet .media__img--rev {
-  margin-left: 12px; }
+  margin-left: 12px;
+}
 
 /*------------------------------------*\
     $MARGINALIA
@@ -2068,7 +2260,8 @@ html.flexbox {
 .marginalia {
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 2; }
+  line-height: 2;
+}
 
 /**
  * Wait for a certain breakpoint to trigger ‘proper' marginalia. Up to this point,
@@ -2076,16 +2269,19 @@ html.flexbox {
  */
 @media (min-width: 1024px) {
   .marginalia {
-    position: relative; }
+    position: relative;
+  }
 
   .marginalia__body,
   .marginalia__body--right {
-    position: absolute; }
+    position: absolute;
+  }
 
   .marginalia__body {
     right: 100%;
     padding-right: 24px;
-    text-align: right; }
+    text-align: right;
+  }
 
   /**
    * Align marginalia to the right of the text.
@@ -2093,7 +2289,9 @@ html.flexbox {
   .marginalia__body--right {
     left: 100%;
     padding-left: 24px;
-    text-align: left; } }
+    text-align: left;
+  }
+}
 /*------------------------------------*\
     $ISLAND
 \*------------------------------------*/
@@ -2110,20 +2308,24 @@ html.flexbox {
  */
 .island,
 .islet {
-  display: block; }
+  display: block;
+}
 
 .island {
-  padding: 24px; }
+  padding: 24px;
+}
 
 .island > :last-child,
 .islet > :last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * Just like `.island`, only smaller.
  */
 .islet {
-  padding: 12px; }
+  padding: 12px;
+}
 
 /*------------------------------------*\
     $BLOCK-LIST
@@ -2146,20 +2348,24 @@ html.flexbox {
 .block-list, .matrix,
 .block-list > li,
 .matrix > li {
-  border: 0 solid #cccccc; }
+  border: 0 solid #cccccc;
+}
 
 .block-list, .matrix {
   list-style: none;
   margin-left: 0;
-  border-top-width: 1px; }
-  .block-list > li, .matrix > li {
-    border-bottom-width: 1px;
-    padding: 12px; }
+  border-top-width: 1px;
+}
+.block-list > li, .matrix > li {
+  border-bottom-width: 1px;
+  padding: 12px;
+}
 
 .block-list__link, .matrix__link {
   display: block;
   padding: 12px;
-  margin: -12px; }
+  margin: -12px;
+}
 
 /*------------------------------------*\
     $MATRIX
@@ -2181,10 +2387,12 @@ html.flexbox {
  *
  */
 .matrix {
-  border-left-width: 1px; }
-  .matrix > li {
-    float: left;
-    border-right-width: 1px; }
+  border-left-width: 1px;
+}
+.matrix > li {
+  float: left;
+  border-right-width: 1px;
+}
 
 /**
  * The `.multi-list` object is a lot like the `.matrix` object only without the
@@ -2202,26 +2410,32 @@ html.flexbox {
  */
 .multi-list {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .multi-list > li {
-  float: left; }
+  float: left;
+}
 
 /**
  * Apply these classes alongside the `.matrix` or `.multi-list` classes on
  * lists to determine how wide their columns are.
  */
 .two-cols > li {
-  width: 50%; }
+  width: 50%;
+}
 
 .three-cols > li {
-  width: 33.333%; }
+  width: 33.333%;
+}
 
 .four-cols > li {
-  width: 25%; }
+  width: 25%;
+}
 
 .five-cols > li {
-  width: 20%; }
+  width: 20%;
+}
 
 /**
  * Unfortunately we have to qualify this selector in order to bring its
@@ -2229,7 +2443,8 @@ html.flexbox {
  */
 .matrix > .all-cols,
 .multi-list > .all-cols {
-  width: 100%; }
+  width: 100%;
+}
 
 /*------------------------------------*\
     $SPLIT
@@ -2259,12 +2474,14 @@ html.flexbox {
 .split {
   text-align: right;
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .split__title {
   text-align: left;
   float: left;
-  clear: left; }
+  clear: left;
+}
 
 /*------------------------------------*\
     $THIS-OR-THIS
@@ -2293,12 +2510,14 @@ html.flexbox {
 .this-or-this {
   display: table;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .this-or-this__this,
 .this-or-this__or {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*------------------------------------*\
     $LINK-COMPLEX
@@ -2321,12 +2540,14 @@ html.flexbox {
 .link-complex:hover,
 .link-complex:active,
 .link-complex:focus {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .link-complex:hover .link-complex__target,
 .link-complex:active .link-complex__target,
 .link-complex:focus .link-complex__target {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 /*------------------------------------*\
     $FLYOUT
@@ -2351,7 +2572,8 @@ html.flexbox {
 .flyout,
 .flyout--alt {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .flyout__content {
   /**
@@ -2360,7 +2582,8 @@ html.flexbox {
    */
   position: absolute;
   top: 100%;
-  left: -99999px; }
+  left: -99999px;
+}
 
 /**
  * Bring the flyouts into view when you hover their parents.
@@ -2369,20 +2592,23 @@ html.flexbox {
  */
 .flyout:hover,
 .flyout--alt:hover {
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Regular flyouts sit all the way from the top, flush left.
  */
 .flyout:hover > .flyout__content {
-  left: 0; }
+  left: 0;
+}
 
 /**
  * Alternative flyouts sit all the way from the left, flush top.
  */
 .flyout--alt:hover > .flyout__content {
   top: 0;
-  left: 100%; }
+  left: 100%;
+}
 
 /*------------------------------------*\
     $ARROWS
@@ -2445,7 +2671,8 @@ html.flexbox {
   /**
    * So icons added using `.icon` sit in the centre of the element.
    */
-  text-align: center; }
+  text-align: center;
+}
 
 .sprite {
   /**
@@ -2459,12 +2686,14 @@ html.flexbox {
    * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
    */
   overflow: hidden;
-  *text-indent: -9999px; }
-  .sprite:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%; }
+  *text-indent: -9999px;
+}
+.sprite:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
 
 /**
  * Set up icon font
@@ -2475,21 +2704,26 @@ html.flexbox {
    * Place the icon in a box the exact same dimensions as the icon itself.
    */
   width: 1em;
-  height: 1em; }
-  .icon:before {
-    content: attr(data-icon); }
+  height: 1em;
+}
+.icon:before {
+  content: attr(data-icon);
+}
 
 /**
  * Icon size modifiers.
  */
 .i--large {
-  font-size: 32px; }
+  font-size: 32px;
+}
 
 .i--huge {
-  font-size: 64px; }
+  font-size: 64px;
+}
 
 .i--natural {
-  font-size: inherit; }
+  font-size: inherit;
+}
 
 /*------------------------------------*\
     $ICON-TEXT
@@ -2511,7 +2745,8 @@ html.flexbox {
  *
  */
 .icon-text > .icon-text__icon {
-  margin-right: 6px; }
+  margin-right: 6px;
+}
 
 /**
  * We can also reverse the direction of the margin for icons that appear to the
@@ -2523,7 +2758,8 @@ html.flexbox {
  *
  */
 .icon-text--rev > .icon-text__icon {
-  margin-left: 6px; }
+  margin-left: 6px;
+}
 
 /*------------------------------------*\
     $BEAUTONS.CSS
@@ -2599,13 +2835,16 @@ html.flexbox {
   padding-left: 1em;
   /* [7] */
   border-radius: 4px;
-  /* [8] */ }
+  /* [8] */
+}
 
 .btn, .btn:hover {
   text-decoration: none;
-  /* [9] */ }
+  /* [9] */
+}
 .btn:active, .btn:focus {
-  outline: none; }
+  outline: none;
+}
 
 /*------------------------------------*\
     $SIZES
@@ -2619,17 +2858,20 @@ html.flexbox {
 .btn--small {
   padding-right: 0.5em;
   padding-left: 0.5em;
-  line-height: 2; }
+  line-height: 2;
+}
 
 .btn--large {
   padding-right: 1.5em;
   padding-left: 1.5em;
-  line-height: 4; }
+  line-height: 4;
+}
 
 .btn--huge {
   padding-right: 2em;
   padding-left: 2em;
-  line-height: 5; }
+  line-height: 5;
+}
 
 /**
  * These buttons will fill the entirety of their container.
@@ -2642,7 +2884,8 @@ html.flexbox {
   /* [1] */
   padding-left: 0;
   /* [1] */
-  text-align: center; }
+  text-align: center;
+}
 
 /*------------------------------------*\
     $FONT-SIZES
@@ -2651,13 +2894,16 @@ html.flexbox {
  * Button font-size modifiers.
  */
 .btn--alpha {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 .btn--beta {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .btn--gamma {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 /**
  * Make the button inherit sizing from its parent.
@@ -2667,7 +2913,8 @@ html.flexbox {
   font-size: inherit;
   line-height: inherit;
   padding-right: 0.5em;
-  padding-left: 0.5em; }
+  padding-left: 0.5em;
+}
 
 /*------------------------------------*\
     $FUNCTIONS
@@ -2680,14 +2927,16 @@ html.flexbox {
  */
 .btn--positive {
   background-color: #4A993E;
-  color: #fff; }
+  color: #fff;
+}
 
 /**
  * Negative actions; e.g. close account, delete photo, remove friend, etc.
  */
 .btn--negative {
   background-color: #b33630;
-  color: #fff; }
+  color: #fff;
+}
 
 /**
  * Inactive, disabled buttons.
@@ -2701,7 +2950,8 @@ html.flexbox {
   background-color: #ddd;
   color: #777;
   cursor: text;
-  /* [1] */ }
+  /* [1] */
+}
 
 /*------------------------------------*\
     $STYLES
@@ -2713,10 +2963,12 @@ html.flexbox {
  */
 .btn--soft {
   border-radius: 200px;
-  /* [1] */ }
+  /* [1] */
+}
 
 .btn--hard {
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 /*------------------------------------*\
     $LOZENGES
@@ -2753,10 +3005,12 @@ html.flexbox {
    * overly large number; `border-radius:100%;` would create an oval on
    * non-square elements whereas we just want to round the ends of an element.
    */
-  border-radius: 100px; }
+  border-radius: 100px;
+}
 
 .loz {
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 /*------------------------------------*\
     $RULES
@@ -2773,19 +3027,22 @@ html.flexbox {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   margin-bottom: 23px;
-  margin-bottom: 1.4375rem; }
+  margin-bottom: 1.4375rem;
+}
 
 /**
  * Dotted rules
  */
 .rule--dotted {
-  border-bottom-style: dotted; }
+  border-bottom-style: dotted;
+}
 
 /**
  * Dashed rules
  */
 .rule--dashed {
-  border-bottom-style: dashed; }
+  border-bottom-style: dashed;
+}
 
 /**
  * Ornamental rules. Places a § over the rule.
@@ -2797,17 +3054,20 @@ html.flexbox {
   *
     <hr class="rule  rule--ornament" data-ornament="!">
   *
-  */ }
-  .rule--ornament:after {
-    content: "§";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    line-height: 0;
-    text-align: center; }
-  .rule--ornament[data-ornament]:after {
-    content: attr(data-ornament); }
+  */
+}
+.rule--ornament:after {
+  content: "§";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  line-height: 0;
+  text-align: center;
+}
+.rule--ornament[data-ornament]:after {
+  content: attr(data-ornament);
+}
 
 /*------------------------------------*\
     $STATS
@@ -2836,7 +3096,8 @@ html.flexbox {
   *
   */
 .stat-group {
-  margin-left: -24px; }
+  margin-left: -24px;
+}
 
 .stat {
   float: left;
@@ -2849,7 +3110,8 @@ html.flexbox {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   -o-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .stat__title {
   -webkit-order: 2;
@@ -2857,7 +3119,8 @@ html.flexbox {
   -ms-order: 2;
   -o-order: 2;
   order: 2;
-  -ms-flex-order: 2; }
+  -ms-flex-order: 2;
+}
 
 .stat__value {
   margin-left: 0;
@@ -2866,7 +3129,8 @@ html.flexbox {
   -ms-order: 1;
   -o-order: 1;
   order: 1;
-  -ms-flex-order: 1; }
+  -ms-flex-order: 1;
+}
 
 /*------------------------------------*\
     $GREYBOX
@@ -2901,12 +3165,14 @@ html.flexbox {
   font-family: sans-serif;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
-  color: #fff; }
+  color: #fff;
+}
 
 .greybox a,
 .graybox a {
   color: #fff;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 /**
  * All greyboxes will occupy 100% of their parent’s width, but to alter their
@@ -2914,23 +3180,28 @@ html.flexbox {
  */
 .greybox--small,
 .graybox--small {
-  line-height: 48px; }
+  line-height: 48px;
+}
 
 .greybox--medium,
 .graybox--medium {
-  line-height: 96px; }
+  line-height: 96px;
+}
 
 .greybox--large,
 .graybox--large {
-  line-height: 192px; }
+  line-height: 192px;
+}
 
 .greybox--huge,
 .graybox--huge {
-  line-height: 384px; }
+  line-height: 384px;
+}
 
 .greybox--gigantic,
 .graybox--gigantic {
-  line-height: 768px; }
+  line-height: 768px;
+}
 
 /**
  * Style trumps; helper and brand classes
@@ -2950,100 +3221,124 @@ html.flexbox {
 * Whole
 */
 .one-whole {
-  width: 100%; }
+  width: 100%;
+}
 
 /**
 * Halves
 */
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
-  width: 50%; }
+  width: 50%;
+}
 
 /**
 * Thirds
 */
 .one-third, .two-sixths, .four-twelfths {
-  width: 33.333%; }
+  width: 33.333%;
+}
 
 .two-thirds, .four-sixths, .eight-twelfths {
-  width: 66.666%; }
+  width: 66.666%;
+}
 
 /**
 * Quarters
 */
 .one-quarter, .two-eighths, .three-twelfths {
-  width: 25%; }
+  width: 25%;
+}
 
 .three-quarters, .six-eighths, .nine-twelfths {
-  width: 75%; }
+  width: 75%;
+}
 
 /**
 * Fifths
 */
 .one-fifth, .two-tenths {
-  width: 20%; }
+  width: 20%;
+}
 
 .two-fifths, .four-tenths {
-  width: 40%; }
+  width: 40%;
+}
 
 .three-fifths, .six-tenths {
-  width: 60%; }
+  width: 60%;
+}
 
 .four-fifths, .eight-tenths {
-  width: 80%; }
+  width: 80%;
+}
 
 /**
 * Sixths
 */
 .one-sixth, .two-twelfths {
-  width: 16.666%; }
+  width: 16.666%;
+}
 
 .five-sixths, .ten-twelfths {
-  width: 83.333%; }
+  width: 83.333%;
+}
 
 /**
 * Eighths
 */
 .one-eighth {
-  width: 12.5%; }
+  width: 12.5%;
+}
 
 .three-eighths {
-  width: 37.5%; }
+  width: 37.5%;
+}
 
 .five-eighths {
-  width: 62.5%; }
+  width: 62.5%;
+}
 
 .seven-eighths {
-  width: 87.5%; }
+  width: 87.5%;
+}
 
 /**
 * Tenths
 */
 .one-tenth {
-  width: 10%; }
+  width: 10%;
+}
 
 .three-tenths {
-  width: 30%; }
+  width: 30%;
+}
 
 .seven-tenths {
-  width: 70%; }
+  width: 70%;
+}
 
 .nine-tenths {
-  width: 90%; }
+  width: 90%;
+}
 
 /**
 * Twelfths
 */
 .one-twelfth {
-  width: 8.333%; }
+  width: 8.333%;
+}
 
 .five-twelfths {
-  width: 41.666%; }
+  width: 41.666%;
+}
 
 .seven-twelfths {
-  width: 58.333%; }
+  width: 58.333%;
+}
 
 .eleven-twelfths {
-  width: 91.666%; }
+  width: 91.666%;
+}
 
 /**
  * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
@@ -3064,496 +3359,621 @@ html.flexbox {
   * Whole
   */
   .palm-one-whole {
-    width: 100%; }
+    width: 100%;
+  }
 
   /**
   * Halves
   */
   .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
-    width: 50%; }
+    width: 50%;
+  }
 
   /**
   * Thirds
   */
   .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
-    width: 33.333%; }
+    width: 33.333%;
+  }
 
   .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
-    width: 66.666%; }
+    width: 66.666%;
+  }
 
   /**
   * Quarters
   */
   .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
-    width: 25%; }
+    width: 25%;
+  }
 
   .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
-    width: 75%; }
+    width: 75%;
+  }
 
   /**
   * Fifths
   */
   .palm-one-fifth, .palm-two-tenths {
-    width: 20%; }
+    width: 20%;
+  }
 
   .palm-two-fifths, .palm-four-tenths {
-    width: 40%; }
+    width: 40%;
+  }
 
   .palm-three-fifths, .palm-six-tenths {
-    width: 60%; }
+    width: 60%;
+  }
 
   .palm-four-fifths, .palm-eight-tenths {
-    width: 80%; }
+    width: 80%;
+  }
 
   /**
   * Sixths
   */
   .palm-one-sixth, .palm-two-twelfths {
-    width: 16.666%; }
+    width: 16.666%;
+  }
 
   .palm-five-sixths, .palm-ten-twelfths {
-    width: 83.333%; }
+    width: 83.333%;
+  }
 
   /**
   * Eighths
   */
   .palm-one-eighth {
-    width: 12.5%; }
+    width: 12.5%;
+  }
 
   .palm-three-eighths {
-    width: 37.5%; }
+    width: 37.5%;
+  }
 
   .palm-five-eighths {
-    width: 62.5%; }
+    width: 62.5%;
+  }
 
   .palm-seven-eighths {
-    width: 87.5%; }
+    width: 87.5%;
+  }
 
   /**
   * Tenths
   */
   .palm-one-tenth {
-    width: 10%; }
+    width: 10%;
+  }
 
   .palm-three-tenths {
-    width: 30%; }
+    width: 30%;
+  }
 
   .palm-seven-tenths {
-    width: 70%; }
+    width: 70%;
+  }
 
   .palm-nine-tenths {
-    width: 90%; }
+    width: 90%;
+  }
 
   /**
   * Twelfths
   */
   .palm-one-twelfth {
-    width: 8.333%; }
+    width: 8.333%;
+  }
 
   .palm-five-twelfths {
-    width: 41.666%; }
+    width: 41.666%;
+  }
 
   .palm-seven-twelfths {
-    width: 58.333%; }
+    width: 58.333%;
+  }
 
   .palm-eleven-twelfths {
-    width: 91.666%; } }
+    width: 91.666%;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   /**
   * Whole
   */
   .lap-one-whole {
-    width: 100%; }
+    width: 100%;
+  }
 
   /**
   * Halves
   */
   .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
-    width: 50%; }
+    width: 50%;
+  }
 
   /**
   * Thirds
   */
   .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
-    width: 33.333%; }
+    width: 33.333%;
+  }
 
   .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
-    width: 66.666%; }
+    width: 66.666%;
+  }
 
   /**
   * Quarters
   */
   .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
-    width: 25%; }
+    width: 25%;
+  }
 
   .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
-    width: 75%; }
+    width: 75%;
+  }
 
   /**
   * Fifths
   */
   .lap-one-fifth, .lap-two-tenths {
-    width: 20%; }
+    width: 20%;
+  }
 
   .lap-two-fifths, .lap-four-tenths {
-    width: 40%; }
+    width: 40%;
+  }
 
   .lap-three-fifths, .lap-six-tenths {
-    width: 60%; }
+    width: 60%;
+  }
 
   .lap-four-fifths, .lap-eight-tenths {
-    width: 80%; }
+    width: 80%;
+  }
 
   /**
   * Sixths
   */
   .lap-one-sixth, .lap-two-twelfths {
-    width: 16.666%; }
+    width: 16.666%;
+  }
 
   .lap-five-sixths, .lap-ten-twelfths {
-    width: 83.333%; }
+    width: 83.333%;
+  }
 
   /**
   * Eighths
   */
   .lap-one-eighth {
-    width: 12.5%; }
+    width: 12.5%;
+  }
 
   .lap-three-eighths {
-    width: 37.5%; }
+    width: 37.5%;
+  }
 
   .lap-five-eighths {
-    width: 62.5%; }
+    width: 62.5%;
+  }
 
   .lap-seven-eighths {
-    width: 87.5%; }
+    width: 87.5%;
+  }
 
   /**
   * Tenths
   */
   .lap-one-tenth {
-    width: 10%; }
+    width: 10%;
+  }
 
   .lap-three-tenths {
-    width: 30%; }
+    width: 30%;
+  }
 
   .lap-seven-tenths {
-    width: 70%; }
+    width: 70%;
+  }
 
   .lap-nine-tenths {
-    width: 90%; }
+    width: 90%;
+  }
 
   /**
   * Twelfths
   */
   .lap-one-twelfth {
-    width: 8.333%; }
+    width: 8.333%;
+  }
 
   .lap-five-twelfths {
-    width: 41.666%; }
+    width: 41.666%;
+  }
 
   .lap-seven-twelfths {
-    width: 58.333%; }
+    width: 58.333%;
+  }
 
   .lap-eleven-twelfths {
-    width: 91.666%; } }
+    width: 91.666%;
+  }
+}
 @media only screen and (min-width: 481px) {
   /**
   * Whole
   */
   .lap-and-up-one-whole {
-    width: 100%; }
+    width: 100%;
+  }
 
   /**
   * Halves
   */
   .lap-and-up-one-half, .lap-and-up-two-quarters, .lap-and-up-three-sixths, .lap-and-up-four-eighths, .lap-and-up-five-tenths, .lap-and-up-six-twelfths {
-    width: 50%; }
+    width: 50%;
+  }
 
   /**
   * Thirds
   */
   .lap-and-up-one-third, .lap-and-up-two-sixths, .lap-and-up-four-twelfths {
-    width: 33.333%; }
+    width: 33.333%;
+  }
 
   .lap-and-up-two-thirds, .lap-and-up-four-sixths, .lap-and-up-eight-twelfths {
-    width: 66.666%; }
+    width: 66.666%;
+  }
 
   /**
   * Quarters
   */
   .lap-and-up-one-quarter, .lap-and-up-two-eighths, .lap-and-up-three-twelfths {
-    width: 25%; }
+    width: 25%;
+  }
 
   .lap-and-up-three-quarters, .lap-and-up-six-eighths, .lap-and-up-nine-twelfths {
-    width: 75%; }
+    width: 75%;
+  }
 
   /**
   * Fifths
   */
   .lap-and-up-one-fifth, .lap-and-up-two-tenths {
-    width: 20%; }
+    width: 20%;
+  }
 
   .lap-and-up-two-fifths, .lap-and-up-four-tenths {
-    width: 40%; }
+    width: 40%;
+  }
 
   .lap-and-up-three-fifths, .lap-and-up-six-tenths {
-    width: 60%; }
+    width: 60%;
+  }
 
   .lap-and-up-four-fifths, .lap-and-up-eight-tenths {
-    width: 80%; }
+    width: 80%;
+  }
 
   /**
   * Sixths
   */
   .lap-and-up-one-sixth, .lap-and-up-two-twelfths {
-    width: 16.666%; }
+    width: 16.666%;
+  }
 
   .lap-and-up-five-sixths, .lap-and-up-ten-twelfths {
-    width: 83.333%; }
+    width: 83.333%;
+  }
 
   /**
   * Eighths
   */
   .lap-and-up-one-eighth {
-    width: 12.5%; }
+    width: 12.5%;
+  }
 
   .lap-and-up-three-eighths {
-    width: 37.5%; }
+    width: 37.5%;
+  }
 
   .lap-and-up-five-eighths {
-    width: 62.5%; }
+    width: 62.5%;
+  }
 
   .lap-and-up-seven-eighths {
-    width: 87.5%; }
+    width: 87.5%;
+  }
 
   /**
   * Tenths
   */
   .lap-and-up-one-tenth {
-    width: 10%; }
+    width: 10%;
+  }
 
   .lap-and-up-three-tenths {
-    width: 30%; }
+    width: 30%;
+  }
 
   .lap-and-up-seven-tenths {
-    width: 70%; }
+    width: 70%;
+  }
 
   .lap-and-up-nine-tenths {
-    width: 90%; }
+    width: 90%;
+  }
 
   /**
   * Twelfths
   */
   .lap-and-up-one-twelfth {
-    width: 8.333%; }
+    width: 8.333%;
+  }
 
   .lap-and-up-five-twelfths {
-    width: 41.666%; }
+    width: 41.666%;
+  }
 
   .lap-and-up-seven-twelfths {
-    width: 58.333%; }
+    width: 58.333%;
+  }
 
   .lap-and-up-eleven-twelfths {
-    width: 91.666%; } }
+    width: 91.666%;
+  }
+}
 @media only screen and (max-width: 1023px) {
   /**
   * Whole
   */
   .portable-one-whole {
-    width: 100%; }
+    width: 100%;
+  }
 
   /**
   * Halves
   */
   .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
-    width: 50%; }
+    width: 50%;
+  }
 
   /**
   * Thirds
   */
   .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
-    width: 33.333%; }
+    width: 33.333%;
+  }
 
   .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
-    width: 66.666%; }
+    width: 66.666%;
+  }
 
   /**
   * Quarters
   */
   .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
-    width: 25%; }
+    width: 25%;
+  }
 
   .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
-    width: 75%; }
+    width: 75%;
+  }
 
   /**
   * Fifths
   */
   .portable-one-fifth, .portable-two-tenths {
-    width: 20%; }
+    width: 20%;
+  }
 
   .portable-two-fifths, .portable-four-tenths {
-    width: 40%; }
+    width: 40%;
+  }
 
   .portable-three-fifths, .portable-six-tenths {
-    width: 60%; }
+    width: 60%;
+  }
 
   .portable-four-fifths, .portable-eight-tenths {
-    width: 80%; }
+    width: 80%;
+  }
 
   /**
   * Sixths
   */
   .portable-one-sixth, .portable-two-twelfths {
-    width: 16.666%; }
+    width: 16.666%;
+  }
 
   .portable-five-sixths, .portable-ten-twelfths {
-    width: 83.333%; }
+    width: 83.333%;
+  }
 
   /**
   * Eighths
   */
   .portable-one-eighth {
-    width: 12.5%; }
+    width: 12.5%;
+  }
 
   .portable-three-eighths {
-    width: 37.5%; }
+    width: 37.5%;
+  }
 
   .portable-five-eighths {
-    width: 62.5%; }
+    width: 62.5%;
+  }
 
   .portable-seven-eighths {
-    width: 87.5%; }
+    width: 87.5%;
+  }
 
   /**
   * Tenths
   */
   .portable-one-tenth {
-    width: 10%; }
+    width: 10%;
+  }
 
   .portable-three-tenths {
-    width: 30%; }
+    width: 30%;
+  }
 
   .portable-seven-tenths {
-    width: 70%; }
+    width: 70%;
+  }
 
   .portable-nine-tenths {
-    width: 90%; }
+    width: 90%;
+  }
 
   /**
   * Twelfths
   */
   .portable-one-twelfth {
-    width: 8.333%; }
+    width: 8.333%;
+  }
 
   .portable-five-twelfths {
-    width: 41.666%; }
+    width: 41.666%;
+  }
 
   .portable-seven-twelfths {
-    width: 58.333%; }
+    width: 58.333%;
+  }
 
   .portable-eleven-twelfths {
-    width: 91.666%; } }
+    width: 91.666%;
+  }
+}
 @media only screen and (min-width: 1024px) {
   /**
   * Whole
   */
   .desk-one-whole {
-    width: 100%; }
+    width: 100%;
+  }
 
   /**
   * Halves
   */
   .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
-    width: 50%; }
+    width: 50%;
+  }
 
   /**
   * Thirds
   */
   .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
-    width: 33.333%; }
+    width: 33.333%;
+  }
 
   .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
-    width: 66.666%; }
+    width: 66.666%;
+  }
 
   /**
   * Quarters
   */
   .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
-    width: 25%; }
+    width: 25%;
+  }
 
   .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
-    width: 75%; }
+    width: 75%;
+  }
 
   /**
   * Fifths
   */
   .desk-one-fifth, .desk-two-tenths {
-    width: 20%; }
+    width: 20%;
+  }
 
   .desk-two-fifths, .desk-four-tenths {
-    width: 40%; }
+    width: 40%;
+  }
 
   .desk-three-fifths, .desk-six-tenths {
-    width: 60%; }
+    width: 60%;
+  }
 
   .desk-four-fifths, .desk-eight-tenths {
-    width: 80%; }
+    width: 80%;
+  }
 
   /**
   * Sixths
   */
   .desk-one-sixth, .desk-two-twelfths {
-    width: 16.666%; }
+    width: 16.666%;
+  }
 
   .desk-five-sixths, .desk-ten-twelfths {
-    width: 83.333%; }
+    width: 83.333%;
+  }
 
   /**
   * Eighths
   */
   .desk-one-eighth {
-    width: 12.5%; }
+    width: 12.5%;
+  }
 
   .desk-three-eighths {
-    width: 37.5%; }
+    width: 37.5%;
+  }
 
   .desk-five-eighths {
-    width: 62.5%; }
+    width: 62.5%;
+  }
 
   .desk-seven-eighths {
-    width: 87.5%; }
+    width: 87.5%;
+  }
 
   /**
   * Tenths
   */
   .desk-one-tenth {
-    width: 10%; }
+    width: 10%;
+  }
 
   .desk-three-tenths {
-    width: 30%; }
+    width: 30%;
+  }
 
   .desk-seven-tenths {
-    width: 70%; }
+    width: 70%;
+  }
 
   .desk-nine-tenths {
-    width: 90%; }
+    width: 90%;
+  }
 
   /**
   * Twelfths
   */
   .desk-one-twelfth {
-    width: 8.333%; }
+    width: 8.333%;
+  }
 
   .desk-five-twelfths {
-    width: 41.666%; }
+    width: 41.666%;
+  }
 
   .desk-seven-twelfths {
-    width: 58.333%; }
+    width: 58.333%;
+  }
 
   .desk-eleven-twelfths {
-    width: 91.666%; } }
+    width: 91.666%;
+  }
+}
 /**
  * If you have set the additional `$responsive-extra` variable to ‘true’ in
  * `_vars.scss` then you now have access to the following class available to
@@ -3581,14 +4001,17 @@ html.flexbox {
  */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
-  color: #4a8ec2!important; }
+  color: #4a8ec2!important;
+}
 
 .brand-face {
-  font-family: "Helvetica Neue", sans-serif!important; }
+  font-family: "Helvetica Neue", sans-serif!important;
+}
 
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important; }
+  color: #4a8ec2!important;
+}
 
 /*------------------------------------*\
     $HELPER
@@ -3606,205 +4029,260 @@ html.flexbox {
  * Add/remove floats
  */
 .float--right {
-  float: right !important; }
+  float: right !important;
+}
 
 .float--left {
-  float: left !important; }
+  float: left !important;
+}
 
 .float--none {
-  float: none !important; }
+  float: none !important;
+}
 
 /**
  * Text alignment
  */
 .text--left {
-  text-align: left  !important; }
+  text-align: left  !important;
+}
 
 .text--center {
-  text-align: center !important; }
+  text-align: center !important;
+}
 
 .text--right {
-  text-align: right !important; }
+  text-align: right !important;
+}
 
 /**
  * Font weights
  */
 .weight--light {
-  font-weight: 300 !important; }
+  font-weight: 300 !important;
+}
 
 .weight--normal {
-  font-weight: 400 !important; }
+  font-weight: 400 !important;
+}
 
 .weight--semibold {
-  font-weight: 600 !important; }
+  font-weight: 600 !important;
+}
 
 /**
  * Add/remove margins
  */
 .push {
-  margin: 24px !important; }
+  margin: 24px !important;
+}
 
 .push--top {
-  margin-top: 24px !important; }
+  margin-top: 24px !important;
+}
 
 .push--right {
-  margin-right: 24px !important; }
+  margin-right: 24px !important;
+}
 
 .push--bottom {
-  margin-bottom: 24px !important; }
+  margin-bottom: 24px !important;
+}
 
 .push--left {
-  margin-left: 24px !important; }
+  margin-left: 24px !important;
+}
 
 .push--ends {
   margin-top: 24px !important;
-  margin-bottom: 24px !important; }
+  margin-bottom: 24px !important;
+}
 
 .push--sides {
   margin-right: 24px !important;
-  margin-left: 24px !important; }
+  margin-left: 24px !important;
+}
 
 .push-half {
-  margin: 12px !important; }
+  margin: 12px !important;
+}
 
 .push-half--top {
-  margin-top: 12px !important; }
+  margin-top: 12px !important;
+}
 
 .push-half--right {
-  margin-right: 12px !important; }
+  margin-right: 12px !important;
+}
 
 .push-half--bottom {
-  margin-bottom: 12px !important; }
+  margin-bottom: 12px !important;
+}
 
 .push-half--left {
-  margin-left: 12px !important; }
+  margin-left: 12px !important;
+}
 
 .push-half--ends {
   margin-top: 12px !important;
-  margin-bottom: 12px !important; }
+  margin-bottom: 12px !important;
+}
 
 .push-half--sides {
   margin-right: 12px !important;
-  margin-left: 12px !important; }
+  margin-left: 12px !important;
+}
 
 .flush {
-  margin: 0 !important; }
+  margin: 0 !important;
+}
 
 .flush--top {
-  margin-top: 0 !important; }
+  margin-top: 0 !important;
+}
 
 .flush--right {
-  margin-right: 0 !important; }
+  margin-right: 0 !important;
+}
 
 .flush--bottom {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+}
 
 .flush--left {
-  margin-left: 0 !important; }
+  margin-left: 0 !important;
+}
 
 .flush--ends {
   margin-top: 0 !important;
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+}
 
 .flush--sides {
   margin-right: 0 !important;
-  margin-left: 0 !important; }
+  margin-left: 0 !important;
+}
 
 /**
  * Add/remove paddings
  */
 .soft {
-  padding: 24px !important; }
+  padding: 24px !important;
+}
 
 .soft--top {
-  padding-top: 24px !important; }
+  padding-top: 24px !important;
+}
 
 .soft--right {
-  padding-right: 24px !important; }
+  padding-right: 24px !important;
+}
 
 .soft--bottom {
-  padding-bottom: 24px !important; }
+  padding-bottom: 24px !important;
+}
 
 .soft--left {
-  padding-left: 24px !important; }
+  padding-left: 24px !important;
+}
 
 .soft--ends {
   padding-top: 24px !important;
-  padding-bottom: 24px !important; }
+  padding-bottom: 24px !important;
+}
 
 .soft--sides {
   padding-right: 24px !important;
-  padding-left: 24px !important; }
+  padding-left: 24px !important;
+}
 
 .soft-half {
-  padding: 12px !important; }
+  padding: 12px !important;
+}
 
 .soft-half--top {
-  padding-top: 12px !important; }
+  padding-top: 12px !important;
+}
 
 .soft-half--right {
-  padding-right: 12px !important; }
+  padding-right: 12px !important;
+}
 
 .soft-half--bottom {
-  padding-bottom: 12px !important; }
+  padding-bottom: 12px !important;
+}
 
 .soft-half--left {
-  padding-left: 12px !important; }
+  padding-left: 12px !important;
+}
 
 .soft-half--ends {
   padding-top: 12px !important;
-  padding-bottom: 12px !important; }
+  padding-bottom: 12px !important;
+}
 
 .soft-half--sides {
   padding-right: 12px !important;
-  padding-left: 12px !important; }
+  padding-left: 12px !important;
+}
 
 .hard {
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 .hard--top {
-  padding-top: 0 !important; }
+  padding-top: 0 !important;
+}
 
 .hard--right {
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+}
 
 .hard--bottom {
-  padding-bottom: 0 !important; }
+  padding-bottom: 0 !important;
+}
 
 .hard--left {
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+}
 
 .hard--ends {
   padding-top: 0 !important;
-  padding-bottom: 0 !important; }
+  padding-bottom: 0 !important;
+}
 
 .hard--sides {
   padding-right: 0 !important;
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+}
 
 /**
  * Pull items full width of `.island` parents.
  */
 .full-bleed {
   margin-right: -24px !important;
-  margin-left: -24px !important; }
-  .islet .full-bleed {
-    margin-right: -12px !important;
-    margin-left: -12px !important; }
+  margin-left: -24px !important;
+}
+.islet .full-bleed {
+  margin-right: -12px !important;
+  margin-left: -12px !important;
+}
 
 /**
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
 .informative {
-  cursor: help !important; }
+  cursor: help !important;
+}
 
 /**
  * Mute an object by reducing its opacity.
  */
 .muted {
   opacity: 0.5 !important;
-  filter: alpha(opacity=50) !important; }
+  filter: alpha(opacity=50) !important;
+}
 
 /**
  * Align items to the right where they imply progression/movement forward, e.g.:
@@ -3813,7 +4291,8 @@ html.flexbox {
  *
  */
 .proceed {
-  text-align: right !important; }
+  text-align: right !important;
+}
 
 /**
  * Add a right-angled quote to links that imply movement, e.g.:
@@ -3822,13 +4301,15 @@ html.flexbox {
  *
  */
 .go:after {
-  content: "\00A0»" !important; }
+  content: "\00A0»" !important;
+}
 
 /**
  * Apply capital case to an element (usually a `strong`).
  */
 .caps {
-  text-transform: uppercase !important; }
+  text-transform: uppercase !important;
+}
 
 /**
  * Hide content off-screen without resorting to `display:none;`, also provide
@@ -3843,7 +4324,8 @@ html.flexbox {
   overflow: hidden !important;
   padding: 0 !important;
   position: absolute !important;
-  width: 1px !important; }
+  width: 1px !important;
+}
 
 @media only screen and (max-width: 480px) {
   .accessibility--palm,
@@ -3855,7 +4337,9 @@ html.flexbox {
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important; } }
+    width: 1px !important;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .accessibility--lap,
   .visuallyhidden--lap {
@@ -3866,7 +4350,9 @@ html.flexbox {
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important; } }
+    width: 1px !important;
+  }
+}
 @media only screen and (min-width: 481px) {
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
@@ -3877,7 +4363,9 @@ html.flexbox {
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important; } }
+    width: 1px !important;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .accessibility--portable,
   .visuallyhidden--portable {
@@ -3888,7 +4376,9 @@ html.flexbox {
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important; } }
+    width: 1px !important;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .accessibility--desk,
   .visuallyhidden--desk {
@@ -3899,7 +4389,9 @@ html.flexbox {
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important; } }
+    width: 1px !important;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .accessibility--desk-wide,
   .visuallyhidden--desk-wide {
@@ -3910,17 +4402,26 @@ html.flexbox {
     overflow: hidden !important;
     padding: 0 !important;
     position: absolute !important;
-    width: 1px !important; } }
+    width: 1px !important;
+  }
+}
 /* endif */
 .grid {
-  letter-spacing: -0.31em; }
+  letter-spacing: -0.31em;
+}
 
 .opera:-o-prefocus,
 .grid {
-  word-spacing: -0.43em; }
+  word-spacing: -0.43em;
+}
 
 .grid__item {
   letter-spacing: normal;
-  word-wrap: normal; }
+  word-wrap: normal;
+}
+
+body {
+  background-color: yellowgreen;
+}
 
 /*# sourceMappingURL=main.css.map */

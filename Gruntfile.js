@@ -30,72 +30,23 @@ module.exports = function(grunt) {
     },
 
     // GRUNT-SASS
-    // sass: {
-    //   build: {
-    //     files : [
-    //       {
-    //         src : ['**/*.scss', '!**/_*.scss'],
-    //         cwd : 'scss',
-    //         dest : 'css',
-    //         ext : '.css',
-    //         expand : true
-    //       }
-    //     ],
-    //     options : {
-    //       style : 'expanded'
-    //     }
-    //   }
-    // },
-
-    // GRUNT-CONTRIB-SASS
-    // sass: {
-    //   dist: {
-    //     options: {
-    //       // sourcemap: true,
-    //       style: 'expanded'
-    //     },
-
-    //     files: {
-    //       'main.css': 'main.scss'
-    //     }
-        // files: [
-        //   {
-        //     expand: true,
-        //     cwd: 'scss',
-        //     dest: 'css',
-        //     ext: '.css',
-        //     src: ['**/*.scss', '!**/_*.scss']
-        //   }
-        // ]
-      // }
-    // },
-
-    // compass: {
-    //   dist: {
-    //     options: {
-    //       sassDir: 'scss',
-    //       cssDir: 'css'
-    //     }
-    //   }
-    // },
-
-    autoshot: {
-      default_options: {
+    sass: {
+      dist: {
         options: {
-          // necessary config
-          path: 'screenshots/',
-          filename: '',
-          type: 'png',
-          // optional config, must set either remote or local
-          remote: 'http://localhost:<%= connect.options.port &>',
-          viewport: [
-            '800x600',
-            '1024x768',
-            '1920x1080'
-          ]
+          style: 'expanded',
+          sourcemap: true
         },
-      },
+
+        files: [{
+          expand: true,
+          cwd: 'scss',
+          src: ['*.scss'],
+          dest: 'css',
+          ext: '.css'
+        }]
+      }
     },
+
 
     // https://github.com/nDmitry/grunt-autoprefixer
     autoprefixer: {
@@ -171,7 +122,8 @@ module.exports = function(grunt) {
       js_vendor: {
         files: [
           { expand: true, cwd: './bower_components/jquery', src: ['jquery.js'], dest: 'js/vendor' },
-          { expand: true, cwd: './bower_components/modernizr', src: ['modernizr.js'], dest: 'js/vendor' }
+          { expand: true, cwd: './bower_components/modernizr', src: ['modernizr.js'], dest: 'js/vendor' },
+          { expand: true, cwd: './bower_components/angular', src: ['angular.js'], dest: 'js/vendor' }
         ]
       }
     },
@@ -207,6 +159,12 @@ module.exports = function(grunt) {
         base: 'dist'
       },
       src: ['**']
+    },
+
+    concurrent: {
+      dev: [
+        'sass'
+      ]
     }
 
   });
@@ -215,41 +173,44 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'assemble',
     'copy'
-    ]);
+  ]);
 
   grunt.registerTask('scss', [
-    // 'sass',
+    'sass',
     'copy:css'
-    ]);
+  ]);
   grunt.registerTask('html', [
     'assemble'
-    ]);
+  ]);
   grunt.registerTask('js', [
     'copy:js'
-    ]);
+  ]);
 
   grunt.registerTask('dev', [
+    'concurrent:dev',
     'connect',
     'open:server',
     'notify:server',
     'notify:watch',
     'watch'
-    ]);
+  ]);
   grunt.registerTask('demo', [
     'copy:demo',
     'assemble:demo',
     'open'
-    ]);
+  ]);
   grunt.registerTask('deploy', [
     'gh-pages',
     'notify:deploy'
-    ]);
+  ]);
 
-  grunt.registerTask('screenshots', [
-    'autoshot:default_options'
-    ]);
+  grunt.registerTask('screenshot', [
+    'localscreenshots'
+  ]);
 
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-autoshot');
+  grunt.loadNpmTasks('grunt-localscreenshots');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-devtools');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
