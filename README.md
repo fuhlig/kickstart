@@ -41,4 +41,4 @@ frontend dependencies / extras:
 ## Usage
 run `grunt` for inital setup and `grunt dev` for run the http server and you're ready to go!
 
-*(or execute `$ sh watch` and `$ sh serve` after initial `grunt`)*
+*(or execute `watch.sh` and `serve.sh` after initial `grunt`)*
